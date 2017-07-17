@@ -1,0 +1,88 @@
+body{
+    background-color: white;
+    color: black;
+    font-family: "HelveticaNeue-Light";
+    font-weight: 500;
+}
+
+
+
+/* LINE GRAPH */
+.line {
+    fill: none;
+    stroke-width: 2px;
+}
+
+
+/* TEXT */
+.descriptions{
+    margin-left: 15px;
+}
+.artist{
+    font-weight: 800;
+}
+.title{
+    font-weight: 100;
+    font-size: 30px;
+}
+
+
+
+
+.hidden{
+    display: none;
+}
+
+/* HAGUE SCHOOL MAIN LAYOUT (CONTAINERS) */
+#wordsContainer{
+    margin-top: 0px;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    background-color: pink;
+}
+.tablecell {
+    display: table-cell;
+    height: 200px;
+    text-align: center;
+}
+#progressiveContainer{
+    background-color: red;
+}
+#radicalContainer{
+    background-color: orange;
+}
+
+
+/* ALL */
+/*body {
+    background-color: black;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+}
+.hidden {
+    display: none;
+}
+header {
+    margin-left: 15px;
+    margin-top: -10px;
+}
+h1 {
+    font-size: 38px;
+    font-weight: 100;
+}
+h2 {
+    font-size: 24px;
+    font-weight: 100;
+}
+h3 {
+    font-size: 16px;
+    margin-top: -20px;
+    font-weight: 300;
+}
+h5 {
+    font-size: 16px;
+    margin-top: -20px;
+    font-weight: 100;
+}*/

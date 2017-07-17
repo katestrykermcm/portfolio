@@ -1,0 +1,167 @@
+
+/* ALL */
+body{
+
+}
+.hidden{
+    display: none;
+}
+.container {  /* everything */
+    width: 1100px;
+}
+#graphic { /* everything */
+    padding-top: 160px;
+}
+#sections { /* text column */
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    top: 0px;
+    z-index: 90;
+    padding-bottom: 200px;
+}
+.step { /* individual descriptive paragraphs */
+    margin-bottom: 200px;
+    font-family: "Georgia";
+    font-size: 16px;
+    line-height: 23px;
+    color: #767678;
+}
+#sections .title {
+    font-family: "Georgia";
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    color: #262626;
+    line-height: 1.2em;
+}
+#extra-space { /* bottom */
+    height: 10px;
+}
+#vis { /* all data visualizations */
+    display: inline-block;
+    position: fixed;
+    top: 60px;
+    z-index: 1;
+    margin-left: 0;
+    padding-top: 30px;
+    /* height: 600px; */
+    /*width: 1000px; */
+    /* background-color: #ddd; */
+}
+svg{
+}
+
+#progressivetext:hover{
+    font-style: italic;
+}
+#radicaltext:hover{
+    font-weight: bold;
+}
+.links{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-decoration: none;
+    font-size: 50px;
+}
+#linkProgressive{
+    color: #5D439B;
+}
+#linkRadical{
+    color: #30BFC6;
+}
+.linkToExplore{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+#exploreRadical{
+    color: #30BFC6;
+}
+#exploreProgressive{
+    color: #5D439B;
+}
+
+/* TEXT */
+.axisLabels{
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.descriptions{
+    margin-left: 15px;
+}
+.artist{
+    font-weight: 800;
+}
+.title{
+    font-weight: 100;
+    font-size: 30px;
+}
+.highlight {
+    fill: orange;
+    font-weight: bold;
+    background-color: orange;
+}
+
+
+
+/* CLICKABLE TERMS AT TOP */
+#wordsContainer{
+    margin-top: 0px;
+    display: table;
+    table-layout: fixed;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tablecell {
+    display: table-cell;
+    height: 200px;
+    text-align: center;
+}
+#summary{
+    width: 550px;
+    margin: auto;
+    font-family: Georgia;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    line-height: 25px;
+}
+
+
+/* LINE GRAPH */
+.line {
+    fill: none;
+    stroke-width: 2px;
+}
+
+
+
+/* NOT USED?? */
+#vis .title { /* not used? */
+    font-size:120px;
+    text-anchor: middle;
+    background-color: red;
+}
+#vis .sub-title { /* not used? */
+    font-size:80px;
+    background-color: yellow;
+    text-anchor: middle;
+}
+.axis path,
+.axis line {
+    fill: none;
+    stroke: red;
+    shape-rendering: crispEdges;
+}
+.cough-arrow {
+    stroke: #000;
+    stroke-width: 4px;
+}
+

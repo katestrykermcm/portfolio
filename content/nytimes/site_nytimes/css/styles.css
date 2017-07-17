@@ -1,0 +1,62 @@
+h1, h2, h3, h4, h5, h6, p {
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+div.boxes {
+/*  border-left: 1px solid black;*/
+  height: auto;
+  margin-bottom: 50px;
+
+}
+
+div.boxes-left {
+/*  border-right: 1px solid black;*/
+  height: auto;
+  margin-bottom: 50px;
+  text-align: right;
+
+}
+
+
+h1.headers {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 48px;
+  margin-bottom: 50px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid black;
+}
+
+h1.headers-year {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+h1.headers-title {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+div.inset {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+div.intro {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  line-height: 2em;
+  font-size: 18px;
+}
+
+p.leadpara {
+  line-height: 1.5em;
+}
+
+p.headline {
+  margin-top: 25px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
