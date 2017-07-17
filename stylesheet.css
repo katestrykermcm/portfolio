@@ -1,0 +1,410 @@
+
+
+
+/* ALL */
+
+body{
+	font-family: Lato;
+	font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
+a{
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+}
+h1{
+	font-size: 30px;
+	font-weight: 400;
+}
+h2{
+	font-weight: 300;
+	font-style: italic;
+	font-size: 18px;
+	margin-top: -10px;
+	margin-left: 2px;
+}
+h4{
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 16px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	letter-spacing: 2px;
+}
+h4 a:hover{
+	font-weight: 600;
+}
+h5{
+	font-weight: 600;
+	font-size: 16px;
+	margin-bottom: -3px;
+	margin-top: 0px;
+}
+p{
+	line-height: 18px;
+}
+.underline{
+	text-decoration: underline;
+}
+.questions{
+	margin-top: 0px;
+	font-size: 60px;
+	line-height: 80px;
+	font-weight: 300;
+	/*color: #ff81c5;*/
+	/*color: #56ae56;*/
+}
+.hidden{
+	display: none;
+}
+
+
+
+
+/* HOME */
+
+#home{
+	overflow-y: hidden; /* even necessary with javascript? doesn't work on safari it seems */
+}
+
+
+
+
+/* HEADER */
+
+.headerContainer{
+	width: 100%;
+	height: 150px; /* update HEADER_HEIGHT in script.js if altered */ 
+	/*background-color: pink;*/
+}
+.headerTitleText{
+	margin-left: 50px;
+	margin-top: 15px;
+}
+#nameContainer{
+	float: left;
+	position: fixed;
+	z-index: 100;
+	top: 0px;
+	left: 0px;
+}
+.navigationContainer{
+	margin-top: 55px;
+	width: 240px;
+	float: left;
+	position: fixed;
+	z-index: 100;
+	top: 0px;
+	right: 0px;
+}
+.navigationTextContainer{
+	width: 115px;
+	float: left;
+}
+
+
+
+
+/* FOOTER */
+
+.contactInfo{
+	display: inline-block;
+	clear: both;
+}
+.footerContainer{
+	position: fixed;
+	background-color: white;
+	z-index: 100000000;
+}
+
+
+/* FOOTER FOR HOME */
+
+.footerContainerHome{
+	bottom: 0px;
+	left: 50px;
+	width: 300px;
+	height: 50px; /* update FOOTER_HEIGHT in script.js if altered */  
+}
+.socialMediaImgsHome{
+	margin-top: 4px;
+	max-height: 24px;
+	display:inline-block;
+	margin-left: 1px;
+	margin-right: 9px;
+	vertical-align: top;
+}
+
+
+/* FOOTER FOR PROJECT PAGES */
+
+.footerContainerProj{
+	top: 35%;
+	left: 20px;
+	padding-left: 10px;
+	width: 30px;
+	height: 200px;
+}
+.socialMediaImgsProj{
+	margin-top: 20px;
+	max-height: 25px;
+	display:inline-block;
+	margin-left: 1px;
+	margin-right: 9px;
+	vertical-align: top;
+}
+
+
+
+
+
+/* HORIZONTAL SCROLLING */
+
+.projectsContainer{
+	margin: auto; 
+	margin-left: 15px;
+	text-align: center; 
+	position: relative;
+	width: 100%;
+	padding-bottom: 0px;
+}
+.scrolls{ 
+	white-space:nowrap;
+} 
+
+
+
+
+/* ARROWS */
+
+.arrow{
+    color:black;
+    font-weight:normal;
+    cursor:pointer;
+    outline:none;
+}
+i{
+	width: 11px;
+	height: 11px;
+    border: solid black;
+    border-width: 0 4.2px 4.2px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.right{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    /*float: right;*/
+    /*margin-top: 200px;*/
+}
+.left{
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    /*float: left;*/
+    /*margin-top: 200px;*/
+}
+/* just for home page: circle contains arrow */
+.circle{
+	border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    background-color: #F4F4F4;
+    opacity: .75;
+	position: fixed;
+	top: 44%;
+	z-index: 1000000;
+	cursor: pointer;
+}
+.circleLeft{
+	right: 20px;
+}
+.circleRight{
+	left: 20px;
+}
+.arrowsHome{
+	margin-top: 18px;
+}
+#arrowNext{
+	margin-left: 12px;
+}
+#arrowPrev{
+	margin-left: 20px;
+}
+
+
+
+/* PROJECT SUMMARIES (IMAGES + DESCRIPTIONS) */
+
+.projectsContainer{
+	margin-left: 50px;
+}
+.projects{
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 50px; /* update PROJECT_PADDING in script.js if altered */  
+}
+.projectDescriptions{
+	white-space: normal;
+	word-wrap: break-word;
+	width: 250px;
+	text-align: left;
+	height: 200px; /* update DESCRIPTIONS_HEIGHT in script.js if altered */  
+	padding-top: 15px;
+}
+.projectImgContainers{
+	width: 10px;
+}
+.projectImgs{ 
+	height: 300px;
+	text-align: left;
+	cursor: pointer;
+	margin-left: 0px;
+}
+
+
+
+/* PROJECT SUMMARIES (IMAGES + DESCRIPTIONS) */
+
+#rijks{
+/*    border: 3px solid red;
+    border-radius: 5px;*/
+}
+
+#rijksImg{
+	/*background-color: #eafefd;*/
+/*    border: 5px solid #319343;
+    border-radius: 5px;*/
+}
+
+
+
+
+
+
+.dropdownPage {
+    position: absolute;
+    margin-top: -100%;
+    width: 100%;
+    height: 100%;
+    z-index: 100000;
+    background: white;   
+    border-bottom: 5px solid #319343;
+}
+.cross{
+    position:absolute;
+    background-color: white;
+    top:0px;
+    right:0;
+    padding:14px 15px 0px 15px;
+    color:black;
+    border:0;
+    font-size:7em;
+    line-height:65px;
+    font-weight:normal;
+    cursor:pointer;
+    outline:none;
+    z-index:10000000000000;
+    margin-right: 30px;
+}
+.dropdownContent{
+	margin: auto;
+	margin-top: 50px;
+	width: 80%;
+	height: 500px;
+}
+.nextContainer{
+	cursor: pointer;
+	display:inline-block;
+	height: 500px;
+	width: 9%;
+	vertical-align: top;
+}
+.prevContainer{
+	cursor: pointer;
+	display:inline-block;
+	height: 500px;
+	width: 9%;
+	vertical-align: top;
+}
+.contentContainer{
+	display:inline-block;
+	width: 80%;
+	vertical-align: top;
+	height: 500px;
+}
+.currentContentText{
+	font-weight: 600;
+	border-bottom: 2px solid #000;
+	padding-bottom: 3px;
+}
+.scrollable{
+	overflow-y: scroll;
+}
+.contentVideosContainer{
+	display: inline-block;
+	float: left;
+	width: 63%;
+}
+.video{
+	width: 100%;
+	min-height: 340px;
+}
+.contentImagesContainerProcess{
+	width: 63%;
+	display: inline-block;
+	float: left;
+}
+.contentTextContainerProcess{
+	width: 32%;
+	margin-left: 2%;
+	margin-right: 3%;
+	display: inline-block;
+	float: left;
+	word-wrap: break-word;
+}
+.scrollableSteps{
+	clear: both;
+}
+.scrollableImgs{
+	width: 92%;
+	margin-left: 4%;
+	margin-right: 4%;
+	display: inline-block;
+	float: left;
+}
+.scrollableImgsHalf{
+	width: 44%;
+	display: inline-block;
+	float: left;
+}
+.scrollableImgsHalfLeft{
+	margin-left: 4%;
+	margin-right: 2%;
+}
+.scrollableImgsHalfRight{
+	margin-left: 2%;
+	margin-right: 4%;
+}
+.contentDivs{
+	margin-bottom: 50px;
+}
+.backToTop{
+	width: 100%;
+	height: 450px;
+	text-align: center;
+}
+.contentImagesContainerResults{
+	width: 76%;
+	display: inline-block;
+	float: left;
+}
+.contentTextContainerResults{
+	width: 20%;
+	margin-left: 2%;
+	margin-right: 2%;
+	display: inline-block;
+	float: left;
+	word-wrap: break-word;
+}
