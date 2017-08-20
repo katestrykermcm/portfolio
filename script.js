@@ -1,5 +1,5 @@
 // Update these variables if changes are made to stylesheet
-var HEADER_HEIGHT = 150;
+var HEADER_HEIGHT = 180;
 var FOOTER_HEIGHT = 50;
 var DESCRIPTIONS_HEIGHT = 200;
 var PROJECT_PADDING = 50;
@@ -28,14 +28,38 @@ $(document).ready(function(){
         // Move the width of one project
         var projWidth = $('.projects').width();
         var position = $('#home').scrollLeft();
-        $("body").animate({ scrollLeft: position + PROJECT_PADDING + projWidth + 2}, "slow");
-        // Show other home arrow button if hidden
+        var scrollLeftTo = position + PROJECT_PADDING + projWidth + 2;
+        // doesn't seem to include margin? so include PROJECT_PADDING
+        var maxScrollLeft = (document.getElementById('projectsContainer').scrollWidth - document.getElementById('projectsContainer').clientWidth) + PROJECT_PADDING;
+        // If nearing the rightmost (last) project picture
+        if ((maxScrollLeft - position) < ((PROJECT_PADDING + projWidth) * 2)){
+            // Move fully to the end of the page
+            // This avoids having the first project picture cropped (and so user is never
+            // suggested to click the previous-arrow, creating a partial left scroll on next click)
+            $("body").animate({ scrollLeft: maxScrollLeft}, "slow");
+        }
+        else{
+            // Move the width of one project
+            $("body").animate({ scrollLeft: scrollLeftTo}, "slow");
+        }
+        // Show other home arrow button if hidden to allow movement in opposite direction
         $("#prevHome").removeClass("hidden");
     });
     $('#prevHome').click(function () {
         var projWidth = $('.projects').width();
         var position = $('#home').scrollLeft();
-        $("body").animate({ scrollLeft: position - (PROJECT_PADDING + projWidth + 2)}, "slow");
+        // If nearing the leftmost (first) project picture
+        if (position < ((PROJECT_PADDING + projWidth) * 2)){
+            // Move fully to the end of the page
+            // This avoids having the first project picture cropped (and so user is never
+            // suggested to click the previous-arrow, creating a partial left scroll on next click)
+            $("body").animate({ scrollLeft: 0}, "slow");
+        }
+        else{
+            // Move the width of one project
+            $("body").animate({ scrollLeft: position - (PROJECT_PADDING + projWidth + 2)}, "slow");
+        }
+        // Show other home arrow button if hidden to allow movement in opposite direction
         $("#nextHome").removeClass("hidden");
     });
 

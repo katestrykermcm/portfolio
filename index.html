@@ -24,23 +24,20 @@
 
             <div class="navigationContainer">
                 <h4>
-                    <div class="navigationTextContainer"><a target="_blank" href="content/home/resume.pdf">RESUME</a></div>
                     <div class="navigationTextContainer"><a href="about.html">ABOUT</a></div>
+                    <div class="navigationTextContainer"><a target="_blank" href="content/home/resume.pdf">RESUME</a></div>
                 </h4>
             </div>
-        </div>
 
+            <!-- NEXT/PREVIOUS ARROWS -->
+            <div id="nextHome" class="circle circleLeft">
+                <p id="arrowNext" class="arrow arrowsHome"><i class="right"></i></p>
+            </div>
 
-
-
-        <!-- NEXT/PREVIOUS ARROWS -->
-
-        <div id="nextHome" class="circle circleLeft">
-            <p id="arrowNext" class="arrow arrowsHome"><i class="right"></i></p>
-        </div>
-
-        <div id="prevHome" class="circle circleRight hidden">
-            <p id="arrowPrev" class="arrow arrowsHome"><i class="left"></i></p>
+            <div id="prevHome" class="circle circleRight hidden">
+                <p id="arrowPrev" class="arrow arrowsHome"><i class="left"></i></p>
+            </div>
+            
         </div>
 
 
@@ -64,7 +61,7 @@
 
         <!-- ALL PROJECTS -->
 
-		<div class="projectsContainer">
+		<div id="projectsContainer">
 			<div class="scrolls">
 
 
@@ -136,10 +133,26 @@
 
 
 
+                <!-- ? -->
+
+                <div id="info" class="projects">
+                    <div class="projectImgContainers">
+                        <img id="infoImg" class="projectImgs" src="content/info/projpic_info.png"/>
+                    </div>
+
+                    <div class="projectDescriptions">
+                        <h5>Digital Forensics Infographics</h5>
+                        <p>Clients came to <a class="underline" target="_blank" href="https://www.strozfriedberg.com/">Stroz Friedberg</a> when faced with catastophes  (e.g. phishing attacks). Consultants analyzed digital traces to determine how the events unfolded. My role ensured that Digital Forensics experts could convey the story revealed by the complex, technical data accurately and compellingly to a wide spectrum of clients.</p>
+                    </div>
+                </div>
+
+
+
+
                 <!-- DASHBOARD -->
 
                 <a href="rijks.html">
-                    <div class="projects">
+                    <div class="projects lastProjectImg">
                         <div class="projectImgContainers">
                             <img class="projectImgs" src="content/dash/projpic_dash.png"/>
                         </div>
