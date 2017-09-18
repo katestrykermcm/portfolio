@@ -62,8 +62,6 @@ p span{
 	font-weight: 600;
 	margin-left: 50px;
 	margin-right: 50px;
-	/*color: #ff81c5;*/
-	/*color: #56ae56;*/
 }
 .hidden{
 	display: none;
@@ -352,10 +350,21 @@ i{
 	width: 25%;
 	float: right;
 }
-.contentRightSmallCol p a{
-	color: #c90057;
+.challengeSummary{
+	background-color: #f2f2f2;
 }
-.contentRightSmallCol p a:hover{
+.challengeSummary p{
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.challengeSummary p:first-of-type{
+	margin-top: 50px;
+}
+.challengeSummary p:last-of-type{
+	margin-bottom: 50px;
+}
+.visitLink{
+	color: #c90057;
 	font-weight: bold;
 }
 .projPageImages{
