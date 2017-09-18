@@ -1,10 +1,20 @@
 // Update these variables if changes are made to stylesheet
 var HEADER_HEIGHT = 180;
 var FOOTER_HEIGHT = 50;
-var DESCRIPTIONS_HEIGHT = 200;
+var DESCRIPTIONS_HEIGHT = 210;
 var PROJECT_PADDING = 50;
 
 $(document).ready(function(){
+
+
+
+
+    // ALL PAGES ON RESIZE
+
+    window.onresize = function() {
+        fitProjectImagesToScreen(); // home page images
+        adjustProjPageFooter();  // proj page footer
+    }
 
 
 
@@ -14,16 +24,28 @@ $(document).ready(function(){
 
     // HOME PAGE: ADJUST PROJECT IMAGE HEIGHTS
 
-    // Fit project images
+    // Fit project images for home page
     fitProjectImagesToScreen();
-    window.onresize = function() {
-        fitProjectImagesToScreen();
-    }
-
 
     // HOME PAGE: ARROWS 
 
-    // Motion for next and previous arrows
+    // Motion for next and previous arrows on page load
+    for (var i=0; i<2; i++) {
+        $('.circleRight').animate({right: 100}, 0); 
+        $('.circleRight').animate({right: 60}, 900); 
+    };
+    $('.circleRight').fadeTo(500, 0.33);
+    $('.circleRight').fadeTo(500, 1);
+    
+
+
+    // $('#nextHome').animate({right: 60}, 1000); 
+    // if (!($("#nextHome").hasClass("hidden"))){
+    //     console.log('heyo not hidden!');
+    //     $('#nextHome').animate({right: 60}, 1000); 
+    //     $("#nextHome").fadeIn(200).fadeOut(200).fadeIn(200).fadeOut(200).fadeIn(200);
+    // }
+
     $('#nextHome').click(function () {
         // Move the width of one project
         var projWidth = $('.projects').width();
@@ -31,7 +53,7 @@ $(document).ready(function(){
         var scrollLeftTo = position + PROJECT_PADDING + projWidth + 2;
         // doesn't seem to include margin? so include PROJECT_PADDING
         var maxScrollLeft = (document.getElementById('projectsContainer').scrollWidth - document.getElementById('projectsContainer').clientWidth) + PROJECT_PADDING;
-        // If nearing the rightmost (last) project picture
+        // If nearing the rightmost (last) project picture (if the amount that's left to move is less than twice the size of a project picture + margin area)
         if ((maxScrollLeft - position) < ((PROJECT_PADDING + projWidth) * 2)){
             // Move fully to the end of the page
             // This avoids having the first project picture cropped (and so user is never
@@ -65,20 +87,26 @@ $(document).ready(function(){
 
     // Hide home arrow buttons if on that end of the page, show in every other case
     $(window).scroll(function(){
-        // if end of page 
-        if(($(window).scrollLeft() + $(window).width() + PROJECT_PADDING) >= $(document).width()){
-            // hide next button
-            $("#nextHome").addClass("hidden");
-        }
-        else{
-            $("#nextHome").removeClass("hidden");
-        }
-        if($(window).scrollLeft() < PROJECT_PADDING){
-            $("#prevHome").addClass("hidden");
-        }
-        else{
-            $("#prevHome").removeClass("hidden");
-        }
+        // This function by default repeatedly gets called multiple times during one scroll,
+        // so instead wait until the scroll is complete
+        clearTimeout($.data(this, 'scrollTimer'));
+        $.data(this, 'scrollTimer', setTimeout(function() {
+            // if end of page 
+            if(($(window).scrollLeft() + $(window).width() + PROJECT_PADDING) >= $(document).width()){
+                // hide next button
+                $("#nextHome").addClass("hidden");
+            }
+            else{
+                $("#nextHome").removeClass("hidden");
+            }
+            if($(window).scrollLeft() < PROJECT_PADDING){
+                $("#prevHome").addClass("hidden");
+            }
+            else{
+                $("#prevHome").removeClass("hidden");
+            }
+        }, 50));
+
     });
 
 
@@ -128,20 +156,27 @@ $(document).ready(function(){
 
     // PROJECT PAGES: MANUVERING BETWEEN CONTENT PAGES
 
+    // Set Footer
+    adjustProjPageFooter();
+
     // Next Arrows
-    $(".nextContainer1").click(function() {
-        showProcessContent();
-    });
-    $(".nextContainer2").click(function() {
-        showResultsContent();
+    $('.projectArrowNext').click(function() {
+        if ($(".challengesText").hasClass('currentContentText')){
+            showProcessContent();
+        }
+        else if ($(".processesText").hasClass('currentContentText')){
+            showResultsContent();
+        }
     });
 
     // Previous Arrows
-    $(".prevContainer2").click(function() {
-        showChallengeContent();
-    });
-    $(".prevContainer3").click(function() {
-        showProcessContent();
+    $('.projectArrowPrev').click(function() {
+        if ($(".processesText").hasClass('currentContentText')){
+            showChallengeContent();
+        }
+        else if ($(".resultsText").hasClass('currentContentText')){
+            showProcessContent();
+        }
     });
 
     // Click header text for different content stages
@@ -162,32 +197,41 @@ $(document).ready(function(){
 // PROJECT PAGES: MANUVERING BETWEEN CONTENT PAGES
 
 function showChallengeContent(){
-    $(".processDiv").fadeOut(function () {
-        $(".resultsDiv").fadeOut(function () {
-            $(".challengeDiv").removeClass("hidden").fadeIn('fast');
+    $("#process").fadeOut(function () {
+        $("#results").fadeOut(function () {
+            $(".challengesText").addClass("currentContentText");
             $(".processesText").removeClass("currentContentText");
             $(".resultsText").removeClass("currentContentText");
-            $(".challengesText").addClass("currentContentText");
+            $("#challenge").removeClass("hidden").fadeIn('fast');
+            $(".projectArrowPrev").addClass("hidden");
+            $(".projectArrowNext").removeClass("hidden");
+            adjustProjPageFooter();
         });
     });
 }
 function showProcessContent(){
-    $(".challengeDiv").fadeOut(function () {
-        $(".resultsDiv").fadeOut(function () {
-            $(".processDiv").removeClass("hidden").fadeIn('fast');
+    $("#challenge").fadeOut(function () {
+        $("#results").fadeOut(function () {
+            $(".processesText").addClass("currentContentText");
             $(".challengesText").removeClass("currentContentText");
             $(".resultsText").removeClass("currentContentText");
-            $(".processesText").addClass("currentContentText");
+            $("#process").removeClass("hidden").fadeIn('fast');
+            $(".projectArrowPrev").removeClass("hidden");
+            $(".projectArrowNext").removeClass("hidden");
+            adjustProjPageFooter();
         });
     });
 }
 function showResultsContent(){
-    $(".challengeDiv").fadeOut(function () {
-        $(".processDiv").fadeOut(function () {
-            $(".resultsDiv").removeClass("hidden").fadeIn('fast');
+    $("#challenge").fadeOut(function () {
+        $("#process").fadeOut(function () {
+            $(".resultsText").addClass("currentContentText");
             $(".challengesText").removeClass("currentContentText");
             $(".processesText").removeClass("currentContentText");
-            $(".resultsText").addClass("currentContentText");
+            $("#results").removeClass("hidden").fadeIn('fast');
+            $(".projectArrowPrev").removeClass("hidden");
+            $(".projectArrowNext").addClass("hidden");
+            adjustProjPageFooter();
         });
     });
 }
@@ -217,5 +261,25 @@ function fitProjectImagesToScreen(){
         $('.projects').width(250);
     }
 }
+
+
+
+
+// ADJUST PROJECT PAGE FOOTER
+
+function adjustProjPageFooter(){
+    // Check if body height is higher than window height (page scrolls)
+    if ($("body").height() > $(window).height()) {
+        $("#projPageFooter").addClass('projPageFooter');
+        $("#projPageFooter").removeClass('projPageNoScroll');
+    }
+    else{
+        $("#projPageFooter").addClass('projPageNoScroll');
+        $("#projPageFooter").removeClass('projPageFooter');
+    }
+}
+
+
+
 
 

@@ -5,7 +5,7 @@
 
 body{
 	font-family: Lato;
-	font-size: 13px;
+	font-size: 14px;
     margin: 0;
     padding: 0;
 }
@@ -21,7 +21,7 @@ h1{
 h2{
 	font-weight: 300;
 	font-style: italic;
-	font-size: 18px;
+	font-size: 21px;
 	margin-top: -10px;
 	margin-left: 2px;
 }
@@ -32,9 +32,13 @@ h4{
 	margin-top: 5px;
 	margin-bottom: 5px;
 	letter-spacing: 2px;
+	cursor: pointer;
 }
 h4 a:hover{
 	font-weight: 600;
+}
+.projectsText{
+	font-size: 14px;
 }
 h5{
 	font-weight: 600;
@@ -43,7 +47,10 @@ h5{
 	margin-top: 0px;
 }
 p{
-	line-height: 18px;
+	line-height: 20px;
+}
+p span{
+	font-weight: 700;
 }
 .underline{
 	text-decoration: underline;
@@ -52,7 +59,9 @@ p{
 	margin-top: 0px;
 	font-size: 60px;
 	line-height: 80px;
-	font-weight: 300;
+	font-weight: 600;
+	margin-left: 50px;
+	margin-right: 50px;
 	/*color: #ff81c5;*/
 	/*color: #56ae56;*/
 }
@@ -69,6 +78,10 @@ p{
 	overflow-y: hidden; /* even necessary with javascript? doesn't work on safari it seems */
 }
 
+.projPage{
+
+}
+
 
 
 
@@ -77,7 +90,6 @@ p{
 .headerContainer{
 	width: 100%;
 	height: 180px; /* update HEADER_HEIGHT in script.js if altered */ 
-	background-color: pink;
 }
 .headerTitleText{
 	margin-left: 50px;
@@ -85,24 +97,47 @@ p{
 }
 #nameContainer{
 	float: left;
-	position: fixed;
 	z-index: 100;
 	top: 0px;
 	left: 0px;
 }
 .navigationContainer{
-	margin-top: 55px;
+	margin-top: 45px;
 	width: 240px;
 	float: left;
-	position: fixed;
 	z-index: 100;
 	top: 0px;
 	right: 50px;
+}
+.homeFixed{
+	position: fixed;
+}
+.projPageAbsolute{
+	position: absolute;
 }
 .navigationTextContainer{
 	width: 110px;
 	float: right;
 	text-align: right;
+}
+
+
+
+
+/* HEADERS FOR PROJECT PAGES */
+
+.projectTitleContainer{
+	width: 100%;
+	text-align: center;
+	/*margin-left: 200px;*/
+	margin-top: 120px;
+	/*background-color: #f9f9f9;*/
+	height: 100px;
+}
+.currentContentText{
+	font-weight: 600;
+	/*border-bottom: 2px solid #000;*/
+	padding-bottom: 3px;
 }
 
 
@@ -115,19 +150,23 @@ p{
 	clear: both;
 }
 .footerContainer{
-	position: fixed;
 	background-color: white;
 	z-index: 100000000;
-}
-
-
-/* FOOTER FOR HOME */
-
-.footerContainerHome{
 	bottom: 0px;
 	left: 50px;
-	width: 300px;
-	height: 50px; /* update FOOTER_HEIGHT in script.js if altered */  
+	height: 50px; /* update FOOTER_HEIGHT in script.js if altered */
+}
+.projPageFooter{
+	margin-left: 50px;
+	margin-bottom: 10px;
+	clear: both;
+	margin-top: 40px;
+	margin-right: 50px;
+}
+.projPageNoScroll{
+	margin-bottom: 10px;
+	position: absolute;
+	right: 50px;
 }
 .socialMediaImgsHome{
 	margin-top: 4px;
@@ -137,6 +176,15 @@ p{
 	margin-right: 9px;
 	vertical-align: top;
 }
+.nextProjContainer{
+	width: 200px;
+	float: right;
+	text-align: right;
+	display: inline-block;
+	vertical-align: top;
+}
+
+
 
 
 /* FOOTER FOR PROJECT PAGES */
@@ -187,10 +235,10 @@ p{
     outline:none;
 }
 i{
-	width: 11px;
-	height: 11px;
+	width: 5px;
+	height: 5px;
     border: solid black;
-    border-width: 0 4.2px 4.2px 0;
+    border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
 }
@@ -209,20 +257,19 @@ i{
 /* just for home page: circle contains arrow */
 .circle{
 	border-radius: 50%;
-    width: 55px;
-    height: 55px;
-    background-color: #F4F4F4;
-    opacity: .75;
-	position: fixed;
-	top: 44%;
+    background-color: white;
+	top: 125px;
 	z-index: 1000000;
 	cursor: pointer;
 }
-.circleLeft{
-	right: 20px;
+.projectArrows{
+	top: 135px;
 }
 .circleRight{
-	left: 20px;
+	right: 100px;
+}
+.circleLeft{
+	left: 40px;
 }
 .arrowsHome{
 	margin-top: 18px;
@@ -249,9 +296,9 @@ i{
 .projectDescriptions{
 	white-space: normal;
 	word-wrap: break-word;
-	width: 250px;
+	width: 260px;
 	text-align: left;
-	height: 200px; /* update DESCRIPTIONS_HEIGHT in script.js if altered */  
+	height: 210px; /* update DESCRIPTIONS_HEIGHT in script.js if altered */  
 	padding-top: 15px;
 }
 .projectImgContainers{
@@ -280,6 +327,43 @@ i{
 }
 
 
+
+
+
+
+
+
+.content {
+	margin-top: 10px;
+	z-index: 100000;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.contentEntry{
+	margin-top: 50px;
+	clear: both;
+}
+.contentLeftLargeCol{
+	display: inline-block;
+	width: 70%;
+}
+.contentRightSmallCol{
+	display: inline-block;
+	width: 25%;
+	float: right;
+}
+.contentRightSmallCol p a{
+	color: #c90057;
+}
+.contentRightSmallCol p a:hover{
+	font-weight: bold;
+}
+.projPageImages{
+	max-width: 100%;
+}
+.rijksGifs{
+	width: 300px;
+}
 
 
 
@@ -334,11 +418,6 @@ i{
 	width: 80%;
 	vertical-align: top;
 	height: 500px;
-}
-.currentContentText{
-	font-weight: 600;
-	border-bottom: 2px solid #000;
-	padding-bottom: 3px;
 }
 .scrollable{
 	overflow-y: scroll;
