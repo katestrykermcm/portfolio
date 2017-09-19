@@ -370,6 +370,17 @@ i{
 .projPageImages{
 	max-width: 100%;
 }
+.projPageImagesDouble{
+	max-width: 47%;
+	margin-right: 2%;
+}
+.projPageImagesTriple{
+	max-width: 30%;
+	margin-right: 2%;
+}
+.addSpace{
+	margin-top: 10px;
+}
 .rijksGifs{
 	width: 300px;
 }
