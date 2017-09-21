@@ -252,7 +252,10 @@ function fitProjectImagesToScreen(){
         // Do NOT go smaller than this
         $('.projectImgs').height(100);
     }
-    var containerWidth = $('.projectImgs').width();
+
+    // ratio of images is 950x1060 (w x h)
+    var containerWidth = (95*leftoverHeight)/106;
+
     if (leftoverHeight > 250){
         $('.projects').width(containerWidth);
     }

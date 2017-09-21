@@ -392,8 +392,11 @@ i{
 .addSpace{
 	margin-top: 10px;
 }
-.rijksGifs{
+.smallGifs{
 	width: 300px;
+}
+.bigGifs{
+	width: 800px;
 }
 
 
