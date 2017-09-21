@@ -40,9 +40,15 @@ h4 a:hover{
 .projectsText{
 	font-size: 14px;
 }
-h5{
+h5{ /* titles on home page */
 	font-weight: 600;
 	font-size: 16px;
+	margin-bottom: -3px;
+	margin-top: 0px;
+}
+h6{ /* titles on project pages */
+	font-weight: 600;
+	font-size: 20px;
 	margin-bottom: -3px;
 	margin-top: 0px;
 }
@@ -50,7 +56,7 @@ p{
 	line-height: 20px;
 }
 p span{
-	font-weight: 700;
+	font-weight: 900;
 }
 .underline{
 	text-decoration: underline;
@@ -369,6 +375,11 @@ i{
 }
 .projPageImages{
 	max-width: 100%;
+}
+.projPageImagesSmaller{
+	max-width: 85%;
+	margin-left: 6%;
+	margin-right: 6%;
 }
 .projPageImagesDouble{
 	max-width: 47%;

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Kate Stryker McManus</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<script type="text/javascript" src="script.js"></script> 
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+   </head>
+
+	<body id="rijks" class="projPage">
+
+
+
+
+        <!-- HEADER: NAME & NAVIGATION OPTIONS -->
+
+        <div class="headerContainer">
+            <div class="headerTitleText projPageAbsolute" id="nameContainer">
+                <h1><a href="index.html">Kate Stryker McManus</a></h1>
+            </div>
+
+            <div class="navigationContainer projPageAbsolute">
+                <h4>
+                    <div class="navigationTextContainer"><a href="about.html">ABOUT</a></div>
+                    <div class="navigationTextContainer"><a target="_blank" href="content/home/resume.pdf">RESUME</a></div>
+                </h4>
+            </div>
+
+            <div class="projectTitleContainer projPageAbsolute">
+                <h2>Evolving Meanings & Usage of Words</h2>
+                <h4 class="projectsText">
+                    <span class="challengesText currentContentText"><a>CHALLENGE</a></span> &nbsp&nbsp|&nbsp&nbsp
+                    <span class="processesText"><a>PROCESS</a></span> &nbsp&nbsp|&nbsp&nbsp
+                    <span class="resultsText"><a>RESULTS</a></span>
+                </h4>
+            </div>
+
+            <!-- NEXT/PREVIOUS ARROWS -->
+            <div id="nextProjPage" class="circle circleRight projPageAbsolute projectArrows projectArrowNext">
+                <p id="arrowNext" class="arrow arrowsHome"><i class="right"></i></p>
+            </div>
+
+            <div id="prevProjPage" class="circle circleLeft projPageAbsolute hidden projectArrows projectArrowPrev">
+                <p id="arrowPrev" class="arrow arrowsHome"><i class="left"></i></p>
+            </div>
+        </div>
+
+
+
+
+        <!-- HEADER: NAME & NAVIGATION OPTIONS -->
+
+        <div id="challenge" class="content">
+            <div class="contentEntry">
+                <div class="contentLeftLargeCol">
+                    <p class="questions">How do words evolve over time? How are these changes reflected in the daily articles of The New York Times, published continuously since 1851?</p>
+                </div>
+                <div class="contentRightSmallCol challengeSummary">
+                    <p>
+                        <span>Team: </span>
+                        <a target="_blank" class="underline" href="http://maddesigndev.com/">Madison Borgmann</a>
+                    </p>
+                    <p>
+                        <span>Tools: </span>
+                        JavaScript (<a target="_blank" class="underline" href="https://d3js.org/">d3.js</a>, jQuery), <a target="_blank" class="underline" href="https://developer.nytimes.com/?mcubz=3">NYTimes API</a>, HTML/CSS
+                    </p>
+                    <p>
+                        <span>Skills: </span>
+                        Data Retrieval, Visualization Ideation, Web Design & Development, Paper Prototyping
+                    </p>
+                    <p>
+                        <span>Duration: </span>
+                        1 month
+                    </p>
+                    <p>
+                        <span>Link: </span>
+                        <a target="_blank" class="underline" href="nytimes.html">Final Project</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="process" class="content hidden">
+
+            <div class="contentEntry">
+                <div class="contentLeftLargeCol">
+                    <img class="projPageImagesSmaller" src="content/nytimes/process/0warpeace.png">
+                    <img class="projPageImages addSpace" src="content/nytimes/process/0inspire.jpg">
+                </div>
+                <div class="contentRightSmallCol">
+                    <h6>Inspiration</h6>
+                    <p>
+                        We were initially intrigued by this topic after coming across <span>a variety of <a target="_blank" class="underline" href="https://publiceditor.blogs.nytimes.com/2012/11/06/an-election-day-look-at-how-language-changes-in-the-times-and-in-the-culture/">graphs</a> that plotted the percent of New York Times articles in which a particular word appeared over time</span>. The majority of these were created using <a target="_blank" class="underline" href="http://www.alexislloyd.com/projects/chronicle.html">Alexis Lloyd's Chronicle Tool</a>. In the red and yellow bar graph (bottom left), <a target="_blank" class="underline" href="http://blog.blprnt.com/">Jer Thorp</a> also <a target="_blank" class="underline" href="https://www.flickr.com/photos/blprnt/3272129969/in/photostream/">visualized</a> the terms “terrorism” (above the axis) and “communism” (below the axis) from 1981 to 2009. “Terrorism” spikes in 2001, following September 11th, and “communism” gradually decreases. The yellow bars indicate the occurences that were on the front page. <span>Despite their simplicity, these graphs were able to powerfully convey what the paper (and country) cared about. </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="contentEntry">
+                <div class="contentLeftLargeCol">
+                    <img class="projPageImages" src="content/nytimes/process/1firstwordsall.png">
+                </div>
+                <div class="contentRightSmallCol">
+                    <h6>Identifying Words to Explore</h6>
+                    <p>
+                        To identify more words that could be of interest to plot and analyze, <span>we referred to <a target="_blank" class="underline" href="https://www.nytimes.com/column/first-words">First Words</a>, The New York Time Magazines’s weekly essay series about “what language reveals about our moment.”</span> We read every fascinating article (honestly!) and developed a list of many words and phrases to explore.
+                    </p>
+                </div>
+            </div>
+
+            <div class="contentEntry">
+                <div class="contentLeftLargeCol">
+                    <img class="projPageImages" src="content/nytimes/process/2api.png">
+                </div>
+                <div class="contentRightSmallCol">
+                    <h6>Retrieving the Data</h6>
+                    <p>
+                        As Alexis Lloyd's Chronicle Tool is no longer available to the public, we made our own! <span><a target="_blank" class="underline" href="https://developer.nytimes.com/?mcubz=3">The New York Time's Article Search API</a> empowered us to retrieve New York Times articles from 1851 to today</span>, including headlines, abstracts, lead paragraphs, links to associated multimedia, and more. The API only allows users to process 1 item asynchronously every second and we made a request for each year for every word on our list, so it took a while to acquire the data. However, once we saved it to our machine, it was quick and easy to access.
+                    </p>
+                </div>
+            </div>
+
+            <div class="contentEntry">
+                <div class="contentLeftLargeCol">
+                    <img class="projPageImages" src="content/nytimes/process/3graphs.png">
+                </div>
+                <div class="contentRightSmallCol">
+                    <h6>Plotting All Words of Interest</h6>
+                    <p>
+                        We created graphs of all of the words on our list. We used the same axes as the graphs that initially inspired us: the percent of total articles containing the word vs. time, from 1851 to today.
+                    </p>
+                </div>
+            </div>
+
+            <div class="contentEntry">
+                <div class="contentLeftLargeCol">
+                    <img class="projPageImages" src="content/nytimes/process/4firstwordspicked.png">
+                </div>
+                <div class="contentRightSmallCol">
+                    <h6>Narrowing in</h6>
+                    <p>
+                        At this point, our scope was too large. While the many words we plotted were arguably compelling individually, we were struggling to collectively present anything meaningful. Therefore, <span>we decided to focus on just 2 words</span> that we found particularly striking because of their complex meanings, recent widespread use, and persistent, interconnected role in history: “<a target="_blank" class="underline" href="https://www.nytimes.com/2015/12/20/magazine/whos-really-radical.html?mcubz=0">radical</a>” and “<a target="_blank" class="underline" href="https://www.nytimes.com/2016/01/17/magazine/more-progressive-than-thou.html?mcubz=0&_r=1">progressive</a>.”
+                    </p>
+                </div>
+            </div>
+
+            <div class="contentEntry">
+                <div class="contentLeftLargeCol">
+                    <img class="projPageImages" src="content/nytimes/process/5highlight.png">
+                </div>
+                <div class="contentRightSmallCol">
+                    <h6>Interpreting Trends</h6>
+                    <p>
+                        These graphs <span>tell a story</span>, but what is it? We referred back to the First Words essays and incorporated historical research of our own in order to understand the <span>cultural context</span> that shaped the trends. Ultimately, we generated short explanations for each notable peak and valley in both graphs.
+                    </p>
+                </div>
+            </div>
+
+            <div class="contentEntry">
+                <div class="contentLeftLargeCol">
+                    <img class="projPageImages" src="content/nytimes/process/6sentiment.png">
+                </div>
+                <div class="contentRightSmallCol">
+                    <h6>Delving Deeper</h6>
+                    <p>
+                        Beyond observing trends in the occurrence of the 2 words in New York Times articles, <span>we wanted to determine the tone that accompanied their usage</span>. Were journalists depicting the words positively or negatively? We turned to <span>sentiment analysis</span> of the articles' lead paragraphs to help us begin to answer these kinds of questions. It was disappointing that we could not run the analysis on the entire article, but the API's query options limited us to this. We sought the help of a variety of sentiment analysis tools, including LIWC2015, Lexalytics, and LightSide.
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div id="results" class="content hidden">
+
+            <div class="contentEntry">
+                <div class="contentLeftLargeCol">
+                    <img class="projPageImages" src="content/nytimes/process/6sentiment.png">
+                </div>
+                <div class="contentRightSmallCol">
+                    <h6>Overview</h6>
+                    <p>
+                        <span>Words are often protean.</span> Their connotations can differ greatly between people, times, places, etc. They change as the culture in which they are used changes. A “radical” in 1865 isn’t necessarily what a modern American would define as radical. Does a modern conservative know that some of their economic policies originated with the Progressive Party in the 1900’s? <span>Conflict and disagreement aren’t new to American society, but neither are many of the words at the center of these arguments. This project reveals, through data driven visualizations of article data from The New York Times, how two highly used words in American society, “radical” and “progressive,” have evolved over time.</span> The martini-glass format guides users through timeline graphs of the words by examining historical events surrounding each major peak and valley.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <!-- FOOTER: SOCIAL MEDIA -->
+
+        <div id="projPageFooter" class="footerContainer projPageFooter">
+            <div class="contactInfo" id="socialmediaContainer">
+                <a href="mailto:katestrykermcm@gmail.com?"><img class="socialMediaImgsHome" src="content/home/socialmedia/email.png"/></a>
+                <a target="_blank" href="https://www.linkedin.com/in/kate-mcmanus-9440944a/"><img class="socialMediaImgsHome" src="content/home/socialmedia/link.png"/></a>
+                <a target="_blank" href="https://www.instagram.com/katestrykermcm/"><img class="socialMediaImgsHome" src="content/home/socialmedia/insta.png"/></a>
+                <a target="_blank" href="https://www.pinterest.com/katestrykermcm/"><img class="socialMediaImgsHome" src="content/home/socialmedia/pin.png"/></a>
+                <a target="_blank" href="https://twitter.com/katestrykermcm"><img class="socialMediaImgsHome" src="content/home/socialmedia/twit.png"/></a>
+                <a target="_blank" href="https://github.com/katestrykermcm"><img class="socialMediaImgsHome" src="content/home/socialmedia/git.png"/></a>
+            </div>
+    
+            <div class="nextProjContainer"><h4><a href="about.html">NEXT PROJECT</a></h4></div> 
+        </div>
+
+
+
+
+        <!-- ALL PROJECTS -->
+
+
+	</body>
+</html>
+
+
+

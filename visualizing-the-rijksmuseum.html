@@ -64,7 +64,7 @@
                     </p>
                     <p>
                         <span>Tools: </span>
-                        JavaScript (d3.js, jQuery), HTML/CSS, Adobe Illustrator
+                        JavaScript (<a target="_blank" class="underline" href="https://d3js.org/">d3.js</a>, jQuery), <a target="_blank" class="underline" href="https://www.rijksmuseum.nl/en/api">Rijksmuseum API</a>, HTML/CSS, Adobe Illustrator
                     </p>
                     <p>
                         <span>Skills: </span>
@@ -89,11 +89,11 @@
                     <img class="projPageImages" src="content/rijks/process/0inspire.jpg">
                 </div>
                 <div class="contentRightSmallCol">
-                    <h5>Inspiration</h5>
+                    <h6>Inspiration</h6>
                     <p>
-                        There have been many recent initiatives spearheading the digitization of art. Large-scale, innovative projects, like <a class="underline" target="_blank" href="https://www.google.com/culturalinstitute/beta/">Google’s Arts & Culture</a>, originally inspired us to look into this domain. A few high profile museums are making all, or a portion, of their collections available to the public online. We were drawn to Amsterdam's Rijksmuseum because of its <a class="underline" target="_blank" href="https://www.rijksmuseum.nl/en/api">newly released and comprehensive API</a>.<br><br>
+                        <span>There have been many recent initiatives spearheading the digitization of art.</span> Large-scale, innovative projects, like <a class="underline" target="_blank" href="https://www.google.com/culturalinstitute/beta/">Google’s Arts & Culture</a>, originally inspired us to look into this domain. A few high profile museums are making all, or a portion, of their collections available to the public online. <span>We were drawn to Amsterdam's Rijksmuseum because of its <a class="underline" target="_blank" href="https://www.rijksmuseum.nl/en/api">newly released and comprehensive API</a>.</span><br><br>
 
-                        We were also impressed by <a class="underline" target="_blank" href="https://fivethirtyeight.com/features/a-nerds-guide-to-the-2229-paintings-at-moma/">creative art dimensions visualizations completed with the MoMA's API</a> and <a class="underline" target="_blank" href="http://www.ifweassume.com/2013/11/the-dimensions-of-art.html">Tate Modern’s API</a>, and <a class="underline" target="_blank" href="http://gianordoli.com/projects.html#colors-in-art">color visualizations by Gabriel Gianordoli</a> (left). Furthermore, projects like <a class="underline" target="_blank" href="https://www.nextrembrandt.com/">The Next Rembrandt</a> and <a class="underline" target="_blank" href="https://localprojects.net/work/cleveland-museum-of-art-gallery-one">Local Projects' museum installation</a> inspired us to incorporate facial recognition.
+                        We were also impressed by <a class="underline" target="_blank" href="https://fivethirtyeight.com/features/a-nerds-guide-to-the-2229-paintings-at-moma/">creative art dimensions visualizations completed with the MoMA's API</a> and <a class="underline" target="_blank" href="http://www.ifweassume.com/2013/11/the-dimensions-of-art.html">Tate Modern’s API</a>, and <a class="underline" target="_blank" href="http://gianordoli.com/projects.html#colors-in-art">color visualizations by Gabriel Gianordoli</a> (left). Furthermore, projects like <a class="underline" target="_blank" href="https://www.nextrembrandt.com/">The Next Rembrandt</a> and Local Projects' <a class="underline" target="_blank" href="https://localprojects.net/work/cleveland-museum-of-art-gallery-one">museum installation</a> inspired us to incorporate facial recognition.
                     </p>
                 </div>
             </div>
@@ -103,9 +103,9 @@
                     <img class="projPageImages" src="content/rijks/process/1api.png">
                 </div>
                 <div class="contentRightSmallCol">
-                    <h5>Understanding the Data</h5>
+                    <h6>Understanding the Data</h6>
                     <p>
-                        As the Rijksmuseum's collection is so vast, it took us a while to get acquainted with all that we had access to and narrow in on interesting portions of the data. We created an interface to quickly filter and explore the art. Eventually, we decided to focus on paintings. Not only were we most interested in paintings, but in some cases, working with the other art forms (e.g. statues) caused headaches. For example, as the API provided a rectangular image of each piece, our algorithms would inaccurately treat the white-wall background of a statue as art, too, causing the dimensions and colors to be useless.
+                        As the Rijksmuseum's collection is so vast, it took us a while to get acquainted with all that we had access to and narrow in on interesting portions of the data. <span>We created an interface to quickly filter and explore the art.</span> Eventually, we decided to focus on paintings. Not only were we most interested in paintings, but in some cases, working with the other art forms (e.g. statues) caused headaches. For example, as the API provided a rectangular image of each piece, our algorithms would inaccurately treat the white-wall background of a statue as art, too, causing the dimensions and colors to be useless.
                     </p>
                 </div>
             </div>
@@ -115,9 +115,9 @@
                     <img class="projPageImages" src="content/rijks/process/2colors.png">
                 </div>
                 <div class="contentRightSmallCol">
-                    <h5>Gathering Pixel Colors</h5>
+                    <h6>Gathering Pixel Colors</h6>
                     <p>
-                        We were interested in presenting each painting as a strip of its colors because the artists of The Hague School allegedly had palettes that transitioned from gloomy and gray to lighter and brighter, under the influence of French Impressionism. (However, our visualization did not support this claim.) To accomplish this, we went through every image of every painting in The Hague School and pulled 600 pixels from it. We ensured that the pixels would be a sampling of colors that accurately summarized the painting by selecting evenly-spaced pixels: each x and y position of a pixel had the same ratio as the width and height of the painting, and they stretched across the entire image.
+                        <span>We were interested in presenting each painting as a strip of its colors</span> because the artists of <a class="underline" target="_blank" href="https://en.wikipedia.org/wiki/Hague_School">The Hague School</a> allegedly had palettes that transitioned from gloomy and gray to lighter and brighter, under the influence of French Impressionism. (However, our visualization did not support this <a class="underline" target="_blank" href="https://www.rijksmuseum.nl/en/rijksstudio/styles/the-hague-school">claim</a>.) To accomplish this, we went through every image of every painting in The Hague School and pulled 600 pixels from it. We ensured that the pixels would be a sampling of colors that accurately summarized the painting by selecting evenly-spaced pixels: each x and y position of a pixel had the same ratio as the width and height of the painting, and they stretched across the entire image.
                     </p>
                 </div>
             </div> 
@@ -127,9 +127,9 @@
                     <img class="projPageImages" src="content/rijks/process/2rembrandt.png">
                 </div>
                 <div class="contentRightSmallCol">
-                    <h5>Color Sorting</h5>
+                    <h6>Color Sorting</h6>
                     <p>
-                        Next, we wanted to sort the pixel colors to make them more easily comparable. As color can be sorted primarily across 3 dimensions (hue, saturation, and value), it proved to be difficult to get a smooth sort in a linear, 2 dimensional representation. We experimented with many strategies, for example sorting by saturation and then subsorting by hue, but this created unattractive bands. In the end, sorting by hue was the most effective option. It was fun to sort filtered portions of the collection; pictured to the left, strips of colors from Rembrandt are sorted vertically.
+                        Next, <span>we wanted to sort the pixel colors to make them more easily comparable. As color can be sorted primarily across 3 dimensions</span> (hue, saturation, and value), <span>it proved to be difficult to get a smooth sort</span> in a linear, 2 dimensional representation. We experimented with many strategies, for example sorting by saturation and then subsorting by hue, but this created unattractive bands. In the end, sorting by hue was the most effective option. It was fun to sort colors of filtered portions of the Rijksmuseum's collection. For example, the vertical strips (left) each represent a Rembrandt painting.
                     </p>
                 </div>
             </div>
@@ -142,9 +142,9 @@
                     <img class="projPageImagesDouble addSpace" src="content/rijks/process/3finalfaces.png">
                 </div>
                 <div class="contentRightSmallCol">
-                    <h5>Facial Recognition API's</h5>
+                    <h6>Facial Recognition API's</h6>
                     <p>
-                        We struggled to find a facial recognition API that was effective with paintings as their algorithms are trained on photographs of people. Finally, we deemed the best to be Kairos, as it accurately located the majority of the faces in the paintings.
+                        We struggled to find an effective facial recognition API, which we assume is because the algorithms were trained on photographs of people, not paintings. Finally,<span> we deemed the best technology to be <a class="underline" target="_blank" href="https://www.kairos.com/">Kairos</a>, as it accurately located the majority of the faces in the paintings.</span> It also estimated details such as demographics and emotions, which added some character and amusement to our work.
                     </p>
                 </div>
             </div>
@@ -155,9 +155,9 @@
                     <img class="projPageImagesDouble" src="content/rijks/process/4sketchHague.png">
                 </div>
                 <div class="contentRightSmallCol">
-                    <h5>Designing the Presentation</h5>
+                    <h6>Designing the Presentation</h6>
                     <p>
-                        Once we were able to access and organize the data, we brainstormed together how to best represent it. We considered timelines, filters, sorting, small multiples, and more (left). We gave form to our rough ideas by drawing on paper and whiteboards. We iterated and revised based on suggestions from one another. After generating many concepts, we were all attached to 4. We decided to try and implement all 4, but prioritized them, actually finishing the last concept after we had already handed-in our final project!
+                        Once we were able to access and organize the data, our team brainstormed together how to best represent it. We considered timelines, filters, sorting, small multiples, and more (left). <span>We gave form to our rough ideas by drawing on paper and whiteboards.</span> We iterated and revised based on suggestions from one another. After generating many concepts, we were collectively attached to 4. <span>We decided to try and implement all 4 concepts, each as their own "exhibit"</span>, but prioritized them, actually finishing the last concept after we had already handed-in our final project!
                     </p>
                 </div>
             </div>
@@ -169,9 +169,9 @@
                     <img class="projPageImagesDouble addSpace" src="content/rijks/process/5smallMult.png">
                 </div>
                 <div class="contentRightSmallCol">
-                    <h5>Implementation and Iteration</h5>
+                    <h6>Implementation and Iteration</h6>
                     <p>
-                        All of our designs, from timelines to small multiples, were implemented using D3.js and styled further with HTML/CSS.
+                        All of our designs, from timelines to small multiples, were <span>implemented using <a class="underline" target="_blank" href="https://d3js.org/">d3.js</a></span>. We later improved the early designs (left) to be unified stylistically by making adjustments to the JavaScript and using HTML/CSS.
                     </p>
                 </div>
             </div>
@@ -182,9 +182,9 @@
                     <img class="projPageImagesDouble" src="content/rijks/process/6mapJohn.png">
                 </div>
                 <div class="contentRightSmallCol">
-                    <h5>Further Customization</h5>
+                    <h6>Further Customization</h6>
                     <p>
-                        We added character to our work by including imagery that complemented the paintings from the Rijksmuseum's API. More specifically, we created a vectorized map of Amsterdam (based off of Google Maps) and highlighted various cultural attractions throughout the city.
+                        We added character to our work by incorporating imagery that complemented the paintings from the Rijksmuseum's API. More specifically, we created a vectorized map of Amsterdam (based off of Google Maps) and highlighted various cultural attractions throughout the city.
                     </p>
                 </div>
             </div>
@@ -198,7 +198,7 @@
                     <img class="projPageImages" src="content/rijks/results/home.png" alt="Chart of artwork left in storage.">
                 </div>
                 <div class="contentRightSmallCol">
-                    <h5>Overview</h5>
+                    <h6>Overview</h6>
                     <p>
                         Our final website showcases 4 “exhibits,” each an exploration of a novel way to empower users to remotely experience the art of the Rijksmuseum through technology. Each is described in detail below. This project was <span>accepted to the <a target="_blank" class="underline" href="http://ieeevis.org/">IEEE VIS 2017 Conference</a> as a public installation for the <a target="_blank" class="underline" href="http://visap.uic.edu/2017/index.html">Arts Program (VISAP)</a></span> and as a poster presentation for IEEE Information Visualization (InfoVis). Browse a video summary of our submission and see other accepted projects <a target="_blank" class="underline" href="https://vimeo.com/groups/480818/videos/230839825">here</a>. Additionally, a Data Visualization panel at Carnegie Mellon University voted our site the winner of the <span>“Best Project Award”</span> for the <a target="_blank" class="underline" href="https://cmu-vis-course.github.io/2017/">Visualization in HCI</a> course, taught by <a target="_blank" class="underline" href="http://perer.org/">Adam Perer</a>. <a href="http://rijksviz.com/visap" class="visitLink" target="_blank">Visit the site!</a>
                     </p>
@@ -210,7 +210,7 @@
                     <img class="projPageImages" src="content/rijks/results/iceberg.png" alt="Chart of artwork left in storage.">
                 </div>
                 <div class="contentRightSmallCol">
-                    <h5>Beyond the Exhibits</h5>
+                    <h6>Beyond the Exhibits</h6>
                     <p>
                         This “exhibit” features all of the Rijksmuseum’s 4,000 paintings as thumbnails stacked in histogram form, ordered from the earliest to latest time period. The top of the chart showcases paintings currently on display at the museum, while the bottom displays paintings in storage. It becomes immediately clear that <span>visiting the exhibits only scratches the surface of the impressive collection.</span> Additionally, the number of paintings varies by era in which the art piece was created, revealing many acquisitions of Dutch Golden Age paintings from the 17th century. Looking forward, we are interested in expanding this section to empower users to browse archived work further. Revealing stored art provides an exciting opportunity, as it is one of the few clear advantages technology has over an in-person museum experience. <a href="http://rijksviz.com/visap/iceberg.html" class="visitLink" target="_blank">Visit this exhibit!</a>
                     </p>
@@ -222,7 +222,7 @@
                     <img class="projPageImages" src="content/rijks/results/hague.png">
                 </div>
                 <div class="contentRightSmallCol">
-                    <h5>The Hague School (1860-1890)</h5>
+                    <h6>The Hague School (1860-1890)</h6>
                     <p>
                         This “exhibit” features the prominent and exhibited members of the Hague School, a group of artists who lived and worked in the city between 1860 and 1890. <span>Users can compare and explore the artists' work through the paintings' colors and canvas sizes.</span> Each painting is presented as a strip of its colors, ordered by year, to explore <a target="_blank" href="https://www.rijksmuseum.nl/en/rijksstudio/styles/the-hague-school" class="underline">the claim</a> that the artists’ palettes transitioned from gloomy and gray to lighter and brighter, under the influence of French Impressionism. (Our visualization did not support this.) The dimensions are all aligned at their bottom left corners. These two visualizations are connected with interactivity, so users can identify which dimensions pair with which colors and observe the paintings in a new light. <a href="http://rijksviz.com/visap/hague.html" class="visitLink" target="_blank">Visit this exhibit!</a>
                         <br><br>
@@ -236,7 +236,7 @@
                     <img class="projPageImages" src="content/rijks/results/facebook.png"> 
                 </div>
                 <div class="contentRightSmallCol">
-                    <h5>Faces of the Rijks</h5>
+                    <h6>Faces of the Rijks</h6>
                     <p>
                         Using facial recognition technology, we identified all of the faces within the Rijksmuseum’s paintings. This “exhibit” <span>playfully brings the museum’s characters to life by giving each of the faces a personalized social media page.</span> By clicking through "friends" (other faces identified in the same painting or randomly selected from other paintings), the user can browse new pages and traverse the museum's collection. <a href="http://rijksviz.com/visap/facesRijks.html" class="visitLink" target="_blank">Visit this exhibit!</a>
                         <br><br>
@@ -250,7 +250,7 @@
                     <img class="projPageImages" src="content/rijks/results/masterpieces.png">
                 </div>
                 <div class="contentRightSmallCol">
-                    <h5>Masterpieces</h5>
+                    <h6>Masterpieces</h6>
                     <p>
                         This “exhibit” showcases <span>the Rijksmuseum’s most well-known paintings</span>: a set of 60 masterpieces curated by the museum itself. Each painting is broken down into 600 pixels and sorted by hue. Drawing inspiration from Amsterdam's cityscape, <span>the pixels animate across a vectorized map of the city</span>, as if flowing rapidly through its famous canals. The pixels aggregate on a blank canvas, where the full image is progressively revealed. <a href="http://rijksviz.com/visap/masterpieces.html" class="visitLink" target="_blank">Visit this exhibit!</a>
                         <br><br>
