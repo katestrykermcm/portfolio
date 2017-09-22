@@ -272,11 +272,11 @@ function fitProjectImagesToScreen(){
 
 function adjustProjPageFooter(){
     // Check if body height is higher than window height (page scrolls)
-    if ($("body").height() > $(window).height()) {
+    if ($("body").height() > $(window).height()) { 
         $("#projPageFooter").addClass('projPageFooter');
         $("#projPageFooter").removeClass('projPageNoScroll');
     }
-    else{
+    else{ 
         $("#projPageFooter").addClass('projPageNoScroll');
         $("#projPageFooter").removeClass('projPageFooter');
     }

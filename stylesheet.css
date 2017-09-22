@@ -335,7 +335,7 @@ i{
 
 
 
-
+/* PROJECT PAGES */
 
 .content {
 	margin-top: 10px;
@@ -389,8 +389,16 @@ i{
 	max-width: 30%;
 	margin-right: 2%;
 }
+.projPageImagesQuad{
+	max-width: 21%;
+	margin-left: 2%;
+	/*margin-right: %;*/
+}
 .addSpace{
-	margin-top: 10px;
+	margin-top: 15px;
+}
+.skinnyImage{
+	width: 100px;
 }
 .smallGifs{
 	width: 300px;
@@ -398,6 +406,21 @@ i{
 .bigGifs{
 	width: 800px;
 }
+
+
+
+
+/*#challenge{
+	background-color: pink;
+}
+#process{
+	background-color: yellow;
+}
+#results{
+	background-color: orange;
+}
+*/
+
 
 
 
