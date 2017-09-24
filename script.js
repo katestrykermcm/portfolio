@@ -141,12 +141,7 @@ $(document).ready(function(){
     //     showChallengeContent();
     // });
 
-    // // Close project pages
-    // $(".backToTop").click(function() { 
-    //     // $('body, html, #containerDiv').scrollTop(0);
-    //     $(".contentContainer").animate({ scrollTop: 0 }, "slow");
-    //     return false;
-    // });
+
 
 
 
@@ -188,6 +183,12 @@ $(document).ready(function(){
     });
     $(".resultsText").click(function() {
         showResultsContent();
+    });
+
+    // Scroll to top
+    $(".backToTopText").click(function() { 
+        $('.projPage').animate({ scrollTop: 0 }, "slow");
+        return false;
     });
 });
 
@@ -271,14 +272,17 @@ function fitProjectImagesToScreen(){
 // ADJUST PROJECT PAGE FOOTER
 
 function adjustProjPageFooter(){
+    $(".backToTopContainer").removeClass('hidden');
     // Check if body height is higher than window height (page scrolls)
     if ($("body").height() > $(window).height()) { 
         $("#projPageFooter").addClass('projPageFooter');
         $("#projPageFooter").removeClass('projPageNoScroll');
     }
+    // Page does not scroll
     else{ 
         $("#projPageFooter").addClass('projPageNoScroll');
         $("#projPageFooter").removeClass('projPageFooter');
+        $(".backToTopContainer").addClass('hidden');
     }
 }
 

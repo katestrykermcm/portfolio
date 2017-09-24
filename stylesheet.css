@@ -21,7 +21,7 @@ h1{
 h2{
 	font-weight: 300;
 	font-style: italic;
-	font-size: 21px;
+	font-size: 23px;
 	margin-top: -10px;
 	margin-left: 2px;
 }
@@ -38,7 +38,7 @@ h4 a:hover{
 	font-weight: 600;
 }
 .projectsText{
-	font-size: 14px;
+	font-size: 16px;
 }
 h5{ /* titles on home page */
 	font-weight: 600;
@@ -207,6 +207,12 @@ p span{
 	margin-left: 1px;
 	margin-right: 9px;
 	vertical-align: top;
+}
+.backToTopContainer{
+	text-align: center;
+}
+.backToTopText:hover{
+	font-weight: 600;
 }
 
 
