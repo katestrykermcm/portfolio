@@ -339,6 +339,21 @@ i{
 
 
 
+/* ABOUT PAGE*/
+
+.aboutLeftLargeCol{
+	display: inline-block;
+	width: 25%;
+	float: left;
+}
+.aboutRightSmallCol{
+	margin-left: 50px;
+	display: inline-block;
+	width: 25%;
+	float: left;
+}
+
+
 
 
 /* PROJECT PAGES */
@@ -389,16 +404,25 @@ i{
 }
 .projPageImagesDouble{
 	max-width: 47%;
-	margin-right: 2%;
+	margin-right: 1%;
+	margin-left: 1%;
 }
 .projPageImagesTriple{
 	max-width: 30%;
-	margin-right: 2%;
+	margin-left: 1%;
+	margin-right: 1%;
 }
 .projPageImagesQuad{
 	max-width: 21%;
 	margin-left: 2%;
 	/*margin-right: %;*/
+}
+.projPageImagesLargeShared{
+	max-width: 70%;
+}
+.projPageImagesSmallShared{
+	max-width: 25%;
+	margin-left: 3%;
 }
 .addSpace{
 	margin-top: 15px;
@@ -551,3 +575,5 @@ i{
 	float: left;
 	word-wrap: break-word;
 }
+
+

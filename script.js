@@ -1,3 +1,5 @@
+// Created by KATESTRYKERMCM :)
+
 // Update these variables if changes are made to stylesheet
 var HEADER_HEIGHT = 180;
 var FOOTER_HEIGHT = 50;
