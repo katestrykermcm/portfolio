@@ -235,7 +235,7 @@ p span{
 		margin-left: 50px;
 		margin-bottom: 10px;
 		clear: both;
-		margin-top: -60px;
+		margin-top: -20px;
 		margin-right: 50px;
 	}
 	.projPageNoScroll{
@@ -258,6 +258,11 @@ p span{
 		display: inline-block;
 		vertical-align: top;
 	}
+	.backToTopContainer h4{
+		margin-bottom: -150px;
+		text-align: center;
+	}
+
 
 
 
@@ -280,8 +285,11 @@ p span{
 		margin-right: 9px;
 		vertical-align: top;
 	}
-	.contentEntry .backToTopContainer{
+	.backToTopContainer{
 		text-align: center;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 
@@ -351,6 +359,7 @@ p span{
 		clear: both;
 		display: inline-block;
 		margin-bottom: -10px;
+		width: 100%;
 	}
 	#results .contentEntry{
 		margin-bottom: 90px;	
@@ -676,6 +685,7 @@ p span{
 		margin-bottom: 10px;
 		clear: both;
 		margin-top: -50px;
+		/*background-color: pink;*/
 	}
 
 
@@ -755,10 +765,6 @@ p span{
 
 
 
-	.projectDescriptions{
-		padding-bottom: 30px;
-	}
-
 
 	.projectTitleContainer h2{
 		font-size: 27px;
@@ -822,7 +828,7 @@ p span{
 	.contentEntry{
 		margin-top: 60px;
 		clear: both;
-		margin-bottom: 90px;
+		margin-bottom: 165px;
 		padding-left: 15px;
 		padding-right: 15px;
 	}

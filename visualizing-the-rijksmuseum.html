@@ -60,12 +60,12 @@
         <div id="challenge" class="content graybox">
             <div class="contentEntry">
                 <div class="contentLeftLargeCol">
-                    <p class="questions">How can we use technology to empower users to experience the Rijksmuseum's art in ways that an in-person experience can not?</p>
+                    <p class="questions">How can users experience the Rijksmuseum’s art remotely in new ways that are not available through a museum visit?</p>
                 </div>
                 <div class="contentRightSmallCol challengeSummary">
                     <p>
                         <span>Tools: </span>
-                        JavaScript (<a target="_blank" class="underline" href="https://d3js.org/">d3.js</a>, jQuery), <a target="_blank" class="underline" href="https://www.rijksmuseum.nl/en/api">Rijksmuseum API</a>, HTML/CSS, Adobe Illustrator
+                        JavaScript (<a target="_blank" class="underline" href="https://d3js.org/">d3.js</a>, jQuery), HTML/CSS, Adobe Illustrator, <a target="_blank" class="underline" href="https://www.rijksmuseum.nl/en/api">Rijksmuseum API</a>
                     </p>
                     <p>
                         <span>Skills: </span>
@@ -97,7 +97,7 @@
                 <div class="contentRightSmallCol">
                     <h6>Inspiration</h6>
                     <p>
-                        <span>There have been many recent initiatives spearheading the digitization of art.</span> Large-scale, innovative projects, like <a class="underline" target="_blank" href="https://www.google.com/culturalinstitute/beta/">Google’s Arts & Culture</a>, originally inspired us to look into this domain. A few high profile museums are making all, or a portion, of their collections available to the public online. <span>We were drawn to Amsterdam's Rijksmuseum because of its <a class="underline" target="_blank" href="https://www.rijksmuseum.nl/en/api">newly released and comprehensive API</a>.</span><br><br>
+                        <span>The ways we think about and experience art are changing as many recent initiatives spearhead the digitization of art.</span> Large-scale, innovative projects, like <a class="underline" target="_blank" href="https://www.google.com/culturalinstitute/beta/">Google’s Arts & Culture</a>, originally inspired us to look into this domain. A few high profile museums are making all, or a portion, of their collections available to the public online. (<span>We were drawn to Amsterdam's Rijksmuseum because of its <a class="underline" target="_blank" href="https://www.rijksmuseum.nl/en/api">newly released and comprehensive API</a>.</span>) Our drive to empower users to experience this art grew as we learned more about the <a class="underline" target="_blank" href="https://qz.com/583354/why-is-so-much-of-the-worlds-great-art-in-storage/">scale of art kept in museums' storage and, therefore, unavailable to the public.</a><br><br>
 
                         We were also impressed by <a class="underline" target="_blank" href="https://fivethirtyeight.com/features/a-nerds-guide-to-the-2229-paintings-at-moma/">creative art dimensions visualizations completed with the MoMA's API</a> and <a class="underline" target="_blank" href="http://www.ifweassume.com/2013/11/the-dimensions-of-art.html">Tate Modern’s API</a>, and <a class="underline" target="_blank" href="http://gianordoli.com/projects.html#colors-in-art">color visualizations by Gabriel Gianordoli</a> (left). Furthermore, projects like <a class="underline" target="_blank" href="https://www.nextrembrandt.com/">The Next Rembrandt</a> and Local Projects' <a class="underline" target="_blank" href="https://localprojects.net/work/cleveland-museum-of-art-gallery-one">museum installation</a> inspired us to incorporate facial recognition.
                     </p>
@@ -111,7 +111,7 @@
                 <div class="contentRightSmallCol">
                     <h6>Understanding the Data</h6>
                     <p>
-                        As the Rijksmuseum's collection is so vast, it took us a while to get acquainted with all that we had access to and narrow in on interesting portions of the data. <span>We created an interface to quickly filter and explore the art.</span> Eventually, we decided to focus on paintings. Not only were we most interested in paintings, but in some cases, working with the other art forms (e.g. statues) caused headaches. For example, as the API provided a rectangular image of each piece, our algorithms would inaccurately treat the white-wall background of a statue as art, too, causing the dimensions and colors to be useless.
+                        As the Rijksmuseum's collection is so vast, it took us a while to get acquainted with all that we had access to and narrow in on interesting portions of the data. <span>We created an interface to quickly filter and explore the art.</span> Eventually, we decided to focus on the museum's collection of 4,000 paintings.
                     </p>
                 </div>
             </div>
@@ -150,7 +150,7 @@
                 <div class="contentRightSmallCol">
                     <h6>Facial Recognition API's</h6>
                     <p>
-                        We struggled to find an effective facial recognition API, which we assume is because the algorithms were trained on photographs of people, not paintings. Finally,<span> we deemed the best technology to be <a class="underline" target="_blank" href="https://www.kairos.com/">Kairos</a>, as it accurately located the majority of the faces in the paintings.</span> It also estimated details such as demographics and emotions, which added some character and amusement to our work.
+                        We quickly tested a slew of facial recognition APIs on a few Rijksmuseum paintings, but we struggled to find one that was very effective at identifying the faces. However, eventually we settled on <a class="underline" target="_blank" href="https://www.kairos.com/">Kairos</a> because it <span>accurately located the majority of the faces.</span> It also estimated details such as demographics and emotions, which added some character and amusement to our work.
                     </p>
                 </div>
             </div>
