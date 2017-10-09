@@ -76,145 +76,6 @@ p span{
 
 
 
-
-/*#challenge{
-	background-color: pink;
-}
-#process{
-	background-color: yellow;
-}
-#results{
-	background-color: orange;
-}
-*/
-
-
-
-/*
-
-.dropdownPage {
-    position: absolute;
-    margin-top: -100%;
-    width: 100%;
-    height: 100%;
-    z-index: 100000;
-    background: white;   
-    border-bottom: 5px solid #319343;
-}
-.cross{
-    position:absolute;
-    background-color: white;
-    top:0px;
-    right:0;
-    padding:14px 15px 0px 15px;
-    color:black;
-    border:0;
-    font-size:7em;
-    line-height:65px;
-    font-weight:normal;
-    cursor:pointer;
-    outline:none;
-    z-index:10000000000000;
-    margin-right: 30px;
-}
-.dropdownContent{
-	margin: auto;
-	margin-top: 50px;
-	width: 80%;
-	height: 500px;
-}
-.nextContainer{
-	cursor: pointer;
-	display:inline-block;
-	height: 500px;
-	width: 9%;
-	vertical-align: top;
-}
-.prevContainer{
-	cursor: pointer;
-	display:inline-block;
-	height: 500px;
-	width: 9%;
-	vertical-align: top;
-}
-.contentContainer{
-	display:inline-block;
-	width: 80%;
-	vertical-align: top;
-	height: 500px;
-}
-.scrollable{
-	overflow-y: scroll;
-}
-.contentVideosContainer{
-	display: inline-block;
-	float: left;
-	width: 63%;
-}
-.video{
-	width: 100%;
-	min-height: 340px;
-}
-.contentImagesContainerProcess{
-	width: 63%;
-	display: inline-block;
-	float: left;
-}
-.contentTextContainerProcess{
-	width: 32%;
-	margin-left: 2%;
-	margin-right: 3%;
-	display: inline-block;
-	float: left;
-	word-wrap: break-word;
-}
-.scrollableSteps{
-	clear: both;
-}
-.scrollableImgs{
-	width: 92%;
-	margin-left: 4%;
-	margin-right: 4%;
-	display: inline-block;
-	float: left;
-}
-.scrollableImgsHalf{
-	width: 44%;
-	display: inline-block;
-	float: left;
-}
-.scrollableImgsHalfLeft{
-	margin-left: 4%;
-	margin-right: 2%;
-}
-.scrollableImgsHalfRight{
-	margin-left: 2%;
-	margin-right: 4%;
-}
-.contentDivs{
-	margin-bottom: 50px;
-}
-.backToTop{
-	width: 100%;
-	height: 450px;
-	text-align: center;
-}
-.contentImagesContainerResults{
-	width: 76%;
-	display: inline-block;
-	float: left;
-}
-.contentTextContainerResults{
-	width: 20%;
-	margin-left: 2%;
-	margin-right: 2%;
-	display: inline-block;
-	float: left;
-	word-wrap: break-word;
-}
-*/
-
-
 /* WEB PAGE */
 
 @media only screen and (min-width: 768px) {
@@ -582,11 +443,7 @@ p span{
 
 
 
-
-
-
-
-/* IPAD & MOBILE */
+/* SMALLER */
 
 @media only screen and (max-width: 768px) {
 
@@ -598,8 +455,7 @@ p span{
 		text-align: center; 
 		width: 100%;
 		padding-bottom: 0px;
-	}
-	.scrolls{ 
+		clear: both;
 	}
 	.projects{
 		width: 100%;
@@ -612,10 +468,11 @@ p span{
 		white-space: normal;
 		word-wrap: break-word;
 		text-align: left;
+		max-width: 300px;
 		padding-top: 15px;
 		padding-left: 50px;
 		padding-right: 50px;
-		padding-bottom: 65px;
+		padding-bottom: 50px;
 	}
 	.projectImgContainers{
 		padding-left: 50px;
@@ -648,20 +505,19 @@ p span{
 		left: 0px;
 	}
 	.navigationContainer{
-		margin-top: 45px;
-		width: 240px;
-		float: left;
-		z-index: 100;
-		top: 0px;
-		right: 50px;
+		clear: both;
+		max-width: 300px;
+		margin-left: 50px;
 	}
 	.projPageAbsolute{
 		position: absolute;
 	}
 	.navigationTextContainer{
 		width: 110px;
-		float: right;
-		text-align: right;
+		float: left;
+		text-align: left;
+		margin-top: 20px;
+		margin-bottom: 40px;
 	}
 
 
@@ -702,7 +558,89 @@ p span{
 
 
 
+/* MOBILE */
 
+@media only screen and (max-width: 480px) {
+
+	/* PROJECT SUMMARIES (IMAGES + DESCRIPTIONS) */
+
+	#projectsContainer{
+		/*margin-left: 50px;
+		margin-right: 50px;*/
+		text-align: center; 
+		width: 100%;
+		padding-bottom: 0px;
+		clear: both;
+	}
+	.projects{
+		width: 100%;
+		clear: both;
+	}
+	.lastProjectImg{
+		margin-right: 80px;
+	}
+	.projectDescriptions{
+		white-space: normal;
+		word-wrap: break-word;
+		text-align: left;
+		/*max-width: 300px;*/
+		padding-top: 15px;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 50px;
+	}
+	.projectImgContainers{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.projectImgs{ 
+		width: 100%;
+		text-align: left;
+		cursor: pointer;
+		margin-left: 0px;
+	}
+
+
+
+
+	/* HEADER */
+
+	.headerContainer{
+		width: 100%;
+		height: 160px; /* update HEADER_HEIGHT in script.js if altered */ 
+		margin-top: -20px;
+	}
+	.headerTitleText{
+		margin-left: 15px;
+		margin-top: 15px;
+	}
+	#nameContainer{
+		float: left;
+		z-index: 100;
+		top: 0px;
+		left: 0px;
+	}
+	.navigationContainer{
+		clear: both;
+		max-width: 300px;
+		margin-left: 15px;
+	}
+
+
+
+	.projectDescriptions{
+		padding-bottom: 30px;
+	}
+
+
+	h2{
+		font-size: 17px;
+	}
+	h5{ 
+		font-size: 18px;
+	}
+
+}
 
 
 
