@@ -330,6 +330,9 @@ p span{
 		width: 25%;
 		float: left;
 	}
+	#aboutContent{
+		margin-top: -50px;
+	}
 
 
 
@@ -444,6 +447,7 @@ p span{
 		clear: both;
 	}
 	.projects{
+		margin-top: 75px;
 		width: 100%;
 		clear: both;
 	}
@@ -658,12 +662,20 @@ p span{
 		margin-bottom: -3px;
 		margin-top: 10px;
 	}
+	h4{
+		font-size: 20px;
+	}
 
 
 	.projPageFooter{
 		margin-bottom: 10px;
 		clear: both;
 		margin-top: -50px;
+	}
+
+
+	.aboutText{
+		margin-top: 35px;
 	}
 
 }
@@ -750,7 +762,7 @@ p span{
 		font-size: 17px;
 	}
 	h5{ 
-		font-size: 18px;
+		font-size: 19px;
 	}
 	.questions{
 		margin-top: 60px;
@@ -814,6 +826,15 @@ p span{
 	.contactInfo{
 		margin-left: 15px;
 	}
+
+
+
+
+	.projectDescriptions p{
+		font-size: 17px;
+		line-height: 23px;	
+	}
+
 
 }
 
