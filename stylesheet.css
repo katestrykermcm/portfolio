@@ -756,13 +756,16 @@ p span{
 
 
 	.projectTitleContainer h2{
-		font-size: 23px;
+		font-size: 27px;
 	}
 	h2{
 		font-size: 17px;
 	}
 	h5{ 
 		font-size: 19px;
+	}
+	h6{ /* titles on project pages */
+		font-size: 21px;
 	}
 	.questions{
 		margin-top: 60px;
@@ -771,6 +774,18 @@ p span{
 		font-weight: 600;
 		margin-left: 25px;
 		margin-right: 20px;
+	}
+	.contentRightSmallCol p{
+		font-size: 17px;
+		line-height: 25px;	
+	}
+	.projectDescriptions p{
+		font-size: 17px;
+		line-height: 25px;	
+	}
+	.aboutText p{
+		font-size: 17px;
+		line-height: 25px;	
 	}
 
 
@@ -806,19 +821,6 @@ p span{
 		padding-left: 15px;
 		padding-right: 15px;
 	}
-/*	.contentEntry div{
-		width: 100%;
-		clear: both;
-		
-	}*/
-/*	.projPageImages{
-		padding-left: 15px;
-		padding-right: 15px;
-		width: 100%;
-	}*/
-/*	.backToTopContainer{
-		margin-left: 15px;
-	}*/
 
 
 
@@ -830,10 +832,7 @@ p span{
 
 
 
-	.projectDescriptions p{
-		font-size: 17px;
-		line-height: 23px;	
-	}
+
 
 
 }
