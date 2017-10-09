@@ -414,7 +414,7 @@ p span{
 		width: 300px;
 	}
 	.bigGifs{
-		width: 800px;
+		width: 100%;
 	}
 
 }
@@ -627,10 +627,10 @@ p span{
 		width: 100px;
 	}
 	.smallGifs{
-		width: 300px;
+		width: 100%;
 	}
 	.bigGifs{
-		width: 800px;
+		width: 100%;
 	}
 	.challengeSummary{
 		background-color: #f2f2f2;
@@ -743,6 +743,9 @@ p span{
 	}
 
 
+	.projectTitleContainer h2{
+		font-size: 23px;
+	}
 	h2{
 		font-size: 17px;
 	}
@@ -750,7 +753,7 @@ p span{
 		font-size: 18px;
 	}
 	.questions{
-		margin-top: 0px;
+		margin-top: 60px;
 		font-size: 46px;
 		line-height: 58px;
 		font-weight: 600;
@@ -785,7 +788,7 @@ p span{
 		margin-left: 0px;
 	}
 	.contentEntry{
-		margin-top: 40px;
+		margin-top: 60px;
 		clear: both;
 		margin-bottom: 90px;
 		padding-left: 15px;
