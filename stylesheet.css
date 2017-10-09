@@ -72,6 +72,9 @@ p span{
 .hidden{
 	display: none;
 }
+.backToTopText:hover{
+	font-weight: 600;
+}
 
 
 
@@ -125,14 +128,10 @@ p span{
 	.right{
 	    transform: rotate(-45deg);
 	    -webkit-transform: rotate(-45deg);
-	    /*float: right;*/
-	    /*margin-top: 200px;*/
 	}
 	.left{
 	    transform: rotate(135deg);
 	    -webkit-transform: rotate(135deg);
-	    /*float: left;*/
-	    /*margin-top: 200px;*/
 	}
 	/* just for home page: circle contains arrow */
 	.circle{
@@ -208,14 +207,11 @@ p span{
 	.projectTitleContainer{
 		width: 100%;
 		text-align: center;
-		/*margin-left: 200px;*/
 		margin-top: 120px;
-		/*background-color: #f9f9f9;*/
 		height: 100px;
 	}
 	.currentContentText{
 		font-weight: 600;
-		/*border-bottom: 2px solid #000;*/
 		padding-bottom: 3px;
 	}
 
@@ -286,9 +282,6 @@ p span{
 	.backToTopContainer{
 		text-align: center;
 	}
-	.backToTopText:hover{
-		font-weight: 600;
-	}
 
 
 
@@ -324,22 +317,6 @@ p span{
 
 
 
-	/* PROJECT SUMMARIES (IMAGES + DESCRIPTIONS) */
-
-	#rijks{
-	/*    border: 3px solid red;
-	    border-radius: 5px;*/
-	}
-
-	#rijksImg{
-		/*background-color: #eafefd;*/
-	/*    border: 5px solid #319343;
-	    border-radius: 5px;*/
-	}
-
-
-
-
 	/* ABOUT PAGE */
 
 	.aboutLeftLargeCol{
@@ -359,7 +336,7 @@ p span{
 
 	/* PROJECT PAGES */
 
-	.content {
+	.content{
 		margin-top: 10px;
 		z-index: 100000;
 		margin-left: 50px;
@@ -368,6 +345,8 @@ p span{
 	.contentEntry{
 		margin-top: 50px;
 		clear: both;
+		display: inline-block;
+		margin-bottom: 50px;
 	}
 	.contentLeftLargeCol{
 		display: inline-block;
@@ -447,6 +426,13 @@ p span{
 
 @media only screen and (max-width: 768px) {
 
+	.hideOnSmall{
+		display: none;
+	}
+
+
+
+
 	/* PROJECT SUMMARIES (IMAGES + DESCRIPTIONS) */
 
 	#projectsContainer{
@@ -510,7 +496,7 @@ p span{
 		margin-left: 50px;
 	}
 	.projPageAbsolute{
-		position: absolute;
+		position: static;
 	}
 	.navigationTextContainer{
 		width: 110px;
@@ -523,11 +509,29 @@ p span{
 
 
 
+	/* HEADERS FOR PROJECT PAGES */
+
+	.projectTitleContainer{
+		clear: both;
+		width: 100%;
+		text-align: left;
+		margin-top: 30px;
+		height: 80px;
+		margin-left: 50px;
+	}
+	.currentContentText{
+		font-weight: 600;
+		padding-bottom: 3px;
+	}
+
+
+
+
 	/* FOOTER */
 
 	.contactInfo{
 		clear: both;
-		margin: auto;
+		margin-left: 50px;
 		width: 240px;
 		margin-bottom:50px;
 	}
@@ -553,6 +557,115 @@ p span{
 		display: inline-block;
 		vertical-align: top;
 	}
+
+
+
+
+	/* PROJECT PAGES */
+
+	.content{
+		clear: both;
+		margin-top: 10px;
+		z-index: 100000;
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+	.graybox{ /*added this to get rid of margins*/
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.contentEntry{
+		margin-top: 40px;
+		clear: both;
+		margin-bottom: 90px;
+	}
+	.contentEntry div{
+		width: 100%;
+		clear: both;
+	}
+	.contentRightSmallCol{ /*always project text*/
+		white-space: normal;
+		word-wrap: break-word;
+		text-align: left;
+	}
+	.contentLeftLargeCol{
+		width: 100%;
+	}
+	.projPageImages{
+		max-width: 100%;
+	}
+	.projPageImagesSmaller{
+		max-width: 85%;
+		margin-left: 6%;
+		margin-right: 6%;
+	}
+	.projPageImagesDouble{
+		max-width: 47%;
+		margin-right: 1%;
+		margin-left: 1%;
+	}
+	.projPageImagesTriple{
+		max-width: 30%;
+		margin-left: 1%;
+		margin-right: 1%;
+	}
+	.projPageImagesQuad{
+		max-width: 21%;
+		margin-left: 2%;
+	}
+	.projPageImagesLargeShared{
+		max-width: 70%;
+	}
+	.projPageImagesSmallShared{
+		max-width: 25%;
+		margin-left: 3%;
+	}
+	.addSpace{
+		margin-top: 15px;
+	}
+	.skinnyImage{
+		width: 100px;
+	}
+	.smallGifs{
+		width: 300px;
+	}
+	.bigGifs{
+		width: 800px;
+	}
+	.challengeSummary{
+		background-color: #f2f2f2;
+	}
+	.challengeSummary p{
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+	.challengeSummary p:first-of-type{
+		padding-top: 50px;
+	}
+	.challengeSummary p:last-of-type{
+		padding-bottom: 50px;
+	}
+	.visitLink{
+		color: #c90057;
+		font-weight: bold;
+	}
+
+
+
+	h6{ /* titles on project pages */
+		font-weight: 600;
+		font-size: 18px;
+		margin-bottom: -3px;
+		margin-top: 10px;
+	}
+
+
+	.projPageFooter{
+		margin-bottom: 10px;
+		clear: both;
+		margin-top: -50px;
+	}
+
 }
 
 
@@ -565,8 +678,6 @@ p span{
 	/* PROJECT SUMMARIES (IMAGES + DESCRIPTIONS) */
 
 	#projectsContainer{
-		/*margin-left: 50px;
-		margin-right: 50px;*/
 		text-align: center; 
 		width: 100%;
 		padding-bottom: 0px;
@@ -583,7 +694,6 @@ p span{
 		white-space: normal;
 		word-wrap: break-word;
 		text-align: left;
-		/*max-width: 300px;*/
 		padding-top: 15px;
 		padding-left: 15px;
 		padding-right: 15px;
@@ -638,6 +748,68 @@ p span{
 	}
 	h5{ 
 		font-size: 18px;
+	}
+	.questions{
+		margin-top: 0px;
+		font-size: 46px;
+		line-height: 58px;
+		font-weight: 600;
+		margin-left: 25px;
+		margin-right: 20px;
+	}
+
+
+	.projectTitleContainer{
+		margin-left: 15px;
+	}
+
+
+	.challengeSummary p{
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	.challengeSummary p:first-of-type{
+		padding-top: 15px;
+	}
+	.challengeSummary p:last-of-type{
+		padding-bottom: 15px;
+	}
+
+
+
+	.content{
+		clear: both;
+		margin-top: 10px;
+		z-index: 100000;
+		width: 100%;
+		margin-left: 0px;
+	}
+	.contentEntry{
+		margin-top: 40px;
+		clear: both;
+		margin-bottom: 90px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+/*	.contentEntry div{
+		width: 100%;
+		clear: both;
+		
+	}*/
+/*	.projPageImages{
+		padding-left: 15px;
+		padding-right: 15px;
+		width: 100%;
+	}*/
+/*	.backToTopContainer{
+		margin-left: 15px;
+	}*/
+
+
+
+
+	.contactInfo{
+		margin-left: 15px;
 	}
 
 }

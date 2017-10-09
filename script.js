@@ -8,7 +8,7 @@ var PROJECT_PADDING = 50;
 
 $(document).ready(function(){
 
-
+    // alert($(window).width());
 
 
     // ALL PAGES ON RESIZE
@@ -189,7 +189,7 @@ $(document).ready(function(){
 
     // Scroll to top
     $(".backToTopText").click(function() { 
-        $('.projPage').animate({ scrollTop: 0 }, "slow");
+        $('html,.projPage').animate({ scrollTop: 0 }, "slow");
         return false;
     });
 });
