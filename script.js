@@ -51,7 +51,7 @@ $(document).ready(function(){
     $('#nextHome').click(function () {
         // Move the width of one project
         var projWidth = $('.projects').width();
-        var position = $('#home').scrollLeft();
+        var position = $('html,#home').scrollLeft();
         var scrollLeftTo = position + PROJECT_PADDING + projWidth + 2;
         // doesn't seem to include margin? so include PROJECT_PADDING
         var maxScrollLeft = (document.getElementById('projectsContainer').scrollWidth - document.getElementById('projectsContainer').clientWidth) + PROJECT_PADDING;
@@ -60,28 +60,28 @@ $(document).ready(function(){
             // Move fully to the end of the page
             // This avoids having the first project picture cropped (and so user is never
             // suggested to click the previous-arrow, creating a partial left scroll on next click)
-            $("body").animate({ scrollLeft: maxScrollLeft}, "slow");
+            $("html,body").animate({ scrollLeft: maxScrollLeft}, "slow");
         }
         else{
             // Move the width of one project
-            $("body").animate({ scrollLeft: scrollLeftTo}, "slow");
+            $("html,body").animate({ scrollLeft: scrollLeftTo}, "slow");
         }
         // Show other home arrow button if hidden to allow movement in opposite direction
         $("#prevHome").removeClass("hidden");
     });
     $('#prevHome').click(function () {
         var projWidth = $('.projects').width();
-        var position = $('#home').scrollLeft();
+        var position = $('html,#home').scrollLeft();
         // If nearing the leftmost (first) project picture
         if (position < ((PROJECT_PADDING + projWidth) * 2)){
             // Move fully to the end of the page
             // This avoids having the first project picture cropped (and so user is never
             // suggested to click the previous-arrow, creating a partial left scroll on next click)
-            $("body").animate({ scrollLeft: 0}, "slow");
+            $("html,body").animate({ scrollLeft: 0}, "slow");
         }
         else{
             // Move the width of one project
-            $("body").animate({ scrollLeft: position - (PROJECT_PADDING + projWidth + 2)}, "slow");
+            $("html,body").animate({ scrollLeft: position - (PROJECT_PADDING + projWidth + 2)}, "slow");
         }
         // Show other home arrow button if hidden to allow movement in opposite direction
         $("#nextHome").removeClass("hidden");
@@ -245,26 +245,35 @@ function showResultsContent(){
 // HOME PAGE: ADJUST PROJECT IMAGE HEIGHTS BASED ON CURRENT WINDOW HEIGHT
 
 function fitProjectImagesToScreen(){
-    var windowHeight = $(window).height();
-    // Add 25 for additional buffer and to accommodate additional padding above description text
-    var leftoverHeight = windowHeight - (HEADER_HEIGHT + FOOTER_HEIGHT + DESCRIPTIONS_HEIGHT + 25);
-    if (leftoverHeight > 100){
-        $('.projectImgs').height(leftoverHeight);
-    }
-    else{
-        // Do NOT go smaller than this
-        $('.projectImgs').height(100);
+    // only set for web
+    if ($(window).width() > 768){
+        var windowHeight = $(window).height();
+        // Add 25 for additional buffer and to accommodate additional padding above description text
+        var leftoverHeight = windowHeight - (HEADER_HEIGHT + FOOTER_HEIGHT + DESCRIPTIONS_HEIGHT + 25);
+        if (leftoverHeight > 100){
+            $('.projectImgs').height(leftoverHeight);
+        }
+        else{
+            // Do NOT go smaller than this
+            $('.projectImgs').height(100);
+        }
+
+        // ratio of images is 950x1060 (w x h)
+        var containerWidth = (95*leftoverHeight)/106;
+
+        if (leftoverHeight > 250){
+            $('.projects').width(containerWidth);
+        }
+        else{
+            // Do NOT go smaller than this
+            $('.projects').width(250);
+        }
     }
 
-    // ratio of images is 950x1060 (w x h)
-    var containerWidth = (95*leftoverHeight)/106;
-
-    if (leftoverHeight > 250){
-        $('.projects').width(containerWidth);
-    }
+    // only set for mobile
     else{
-        // Do NOT go smaller than this
-        $('.projects').width(250);
+        $('.projects').width('100%');
+        $('.projectImgs').height('auto');
     }
 }
 

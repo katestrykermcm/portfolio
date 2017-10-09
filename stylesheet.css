@@ -76,369 +76,6 @@ p span{
 
 
 
-/* HOME */
-
-#home{
-	overflow-y: hidden; /* even necessary with javascript? doesn't work on safari it seems */
-}
-
-.projPage{
-
-}
-
-
-
-
-/* HEADER */
-
-.headerContainer{
-	width: 100%;
-	height: 180px; /* update HEADER_HEIGHT in script.js if altered */ 
-}
-.headerTitleText{
-	margin-left: 50px;
-	margin-top: 15px;
-}
-#nameContainer{
-	float: left;
-	z-index: 100;
-	top: 0px;
-	left: 0px;
-}
-.navigationContainer{
-	margin-top: 45px;
-	width: 240px;
-	float: left;
-	z-index: 100;
-	top: 0px;
-	right: 50px;
-}
-.homeFixed{
-	position: fixed;
-}
-.projPageAbsolute{
-	position: absolute;
-}
-.navigationTextContainer{
-	width: 110px;
-	float: right;
-	text-align: right;
-}
-
-
-
-
-/* HEADERS FOR PROJECT PAGES */
-
-.projectTitleContainer{
-	width: 100%;
-	text-align: center;
-	/*margin-left: 200px;*/
-	margin-top: 120px;
-	/*background-color: #f9f9f9;*/
-	height: 100px;
-}
-.currentContentText{
-	font-weight: 600;
-	/*border-bottom: 2px solid #000;*/
-	padding-bottom: 3px;
-}
-
-
-
-
-/* FOOTER */
-
-.contactInfo{
-	display: inline-block;
-	clear: both;
-}
-.footerContainer{
-	background-color: white;
-	z-index: 100000000;
-	bottom: 0px;
-	left: 50px;
-	height: 50px; /* update FOOTER_HEIGHT in script.js if altered */
-}
-.projPageFooter{
-	margin-left: 50px;
-	margin-bottom: 10px;
-	clear: both;
-	margin-top: 40px;
-	margin-right: 50px;
-}
-.projPageNoScroll{
-	margin-bottom: 10px;
-	position: absolute;
-	right: 50px;
-}
-.socialMediaImgsHome{
-	margin-top: 4px;
-	max-height: 24px;
-	display:inline-block;
-	margin-left: 1px;
-	margin-right: 9px;
-	vertical-align: top;
-}
-.nextProjContainer{
-	width: 200px;
-	float: right;
-	text-align: right;
-	display: inline-block;
-	vertical-align: top;
-}
-
-
-
-
-/* FOOTER FOR PROJECT PAGES */
-
-.footerContainerProj{
-	top: 35%;
-	left: 20px;
-	padding-left: 10px;
-	width: 30px;
-	height: 200px;
-}
-.socialMediaImgsProj{
-	margin-top: 20px;
-	max-height: 25px;
-	display:inline-block;
-	margin-left: 1px;
-	margin-right: 9px;
-	vertical-align: top;
-}
-.backToTopContainer{
-	text-align: center;
-}
-.backToTopText:hover{
-	font-weight: 600;
-}
-
-
-
-
-
-/* HORIZONTAL SCROLLING */
-
-#projectsContainer{
-	margin: auto; 
-	margin-left: 50px;
-	text-align: center; 
-	position: relative;
-	width: 100%;
-	padding-bottom: 0px;
-}
-.scrolls{ 
-	white-space:nowrap;
-} 
-
-
-
-
-/* ARROWS */
-
-.arrow{
-    color:black;
-    font-weight:normal;
-    cursor:pointer;
-    outline:none;
-}
-i{
-	width: 5px;
-	height: 5px;
-    border: solid black;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
-}
-.right{
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    /*float: right;*/
-    /*margin-top: 200px;*/
-}
-.left{
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-    /*float: left;*/
-    /*margin-top: 200px;*/
-}
-/* just for home page: circle contains arrow */
-.circle{
-	border-radius: 50%;
-    background-color: white;
-	top: 125px;
-	z-index: 1000000;
-	cursor: pointer;
-}
-.projectArrows{
-	top: 135px;
-}
-.circleRight{
-	right: 100px;
-}
-.circleLeft{
-	left: 40px;
-}
-.arrowsHome{
-	margin-top: 18px;
-}
-#arrowNext{
-	margin-left: 12px;
-}
-#arrowPrev{
-	margin-left: 20px;
-}
-
-
-
-/* PROJECT SUMMARIES (IMAGES + DESCRIPTIONS) */
-
-.projects{
-	display: inline-block;
-	vertical-align: top;
-	margin-right: 50px; /* update PROJECT_PADDING in script.js if altered */  
-}
-.lastProjectImg{
-	margin-right: 80px;
-}
-.projectDescriptions{
-	white-space: normal;
-	word-wrap: break-word;
-	width: 260px;
-	text-align: left;
-	height: 210px; /* update DESCRIPTIONS_HEIGHT in script.js if altered */  
-	padding-top: 15px;
-}
-.projectImgContainers{
-	width: 10px;
-}
-.projectImgs{ 
-	height: 300px;
-	text-align: left;
-	cursor: pointer;
-	margin-left: 0px;
-}
-
-
-
-/* PROJECT SUMMARIES (IMAGES + DESCRIPTIONS) */
-
-#rijks{
-/*    border: 3px solid red;
-    border-radius: 5px;*/
-}
-
-#rijksImg{
-	/*background-color: #eafefd;*/
-/*    border: 5px solid #319343;
-    border-radius: 5px;*/
-}
-
-
-
-
-/* ABOUT PAGE*/
-
-.aboutLeftLargeCol{
-	display: inline-block;
-	width: 25%;
-	float: left;
-}
-.aboutRightSmallCol{
-	margin-left: 50px;
-	display: inline-block;
-	width: 25%;
-	float: left;
-}
-
-
-
-
-/* PROJECT PAGES */
-
-.content {
-	margin-top: 10px;
-	z-index: 100000;
-	margin-left: 50px;
-	margin-right: 50px;
-}
-.contentEntry{
-	margin-top: 50px;
-	clear: both;
-}
-.contentLeftLargeCol{
-	display: inline-block;
-	width: 70%;
-}
-.contentRightSmallCol{
-	display: inline-block;
-	width: 25%;
-	float: right;
-}
-.challengeSummary{
-	background-color: #f2f2f2;
-}
-.challengeSummary p{
-	margin-left: 50px;
-	margin-right: 50px;
-}
-.challengeSummary p:first-of-type{
-	margin-top: 50px;
-}
-.challengeSummary p:last-of-type{
-	margin-bottom: 50px;
-}
-.visitLink{
-	color: #c90057;
-	font-weight: bold;
-}
-.projPageImages{
-	max-width: 100%;
-}
-.projPageImagesSmaller{
-	max-width: 85%;
-	margin-left: 6%;
-	margin-right: 6%;
-}
-.projPageImagesDouble{
-	max-width: 47%;
-	margin-right: 1%;
-	margin-left: 1%;
-}
-.projPageImagesTriple{
-	max-width: 30%;
-	margin-left: 1%;
-	margin-right: 1%;
-}
-.projPageImagesQuad{
-	max-width: 21%;
-	margin-left: 2%;
-	/*margin-right: %;*/
-}
-.projPageImagesLargeShared{
-	max-width: 70%;
-}
-.projPageImagesSmallShared{
-	max-width: 25%;
-	margin-left: 3%;
-}
-.addSpace{
-	margin-top: 15px;
-}
-.skinnyImage{
-	width: 100px;
-}
-.smallGifs{
-	width: 300px;
-}
-.bigGifs{
-	width: 800px;
-}
-
-
-
 
 /*#challenge{
 	background-color: pink;
@@ -453,7 +90,7 @@ i{
 
 
 
-
+/*
 
 .dropdownPage {
     position: absolute;
@@ -575,5 +212,499 @@ i{
 	float: left;
 	word-wrap: break-word;
 }
+*/
+
+
+/* WEB PAGE */
+
+@media only screen and (min-width: 768px) {
+
+	/* HOME */
+
+	#home{
+		overflow-y: hidden; /* even necessary with javascript? doesn't work on safari it seems */
+	}
+
+
+
+
+	/* HORIZONTAL SCROLLING */
+
+	#projectsContainer{
+		margin: auto; 
+		margin-left: 50px;
+		text-align: center; 
+		position: relative;
+		width: 100%;
+		padding-bottom: 0px;
+	}
+	.scrolls{ 
+		white-space:nowrap;
+	} 
+
+
+
+
+	/* ARROWS */
+
+	.arrow{
+	    color:black;
+	    font-weight:normal;
+	    cursor:pointer;
+	    outline:none;
+	}
+	i{
+		width: 5px;
+		height: 5px;
+	    border: solid black;
+	    border-width: 0 3px 3px 0;
+	    display: inline-block;
+	    padding: 3px;
+	}
+	.right{
+	    transform: rotate(-45deg);
+	    -webkit-transform: rotate(-45deg);
+	    /*float: right;*/
+	    /*margin-top: 200px;*/
+	}
+	.left{
+	    transform: rotate(135deg);
+	    -webkit-transform: rotate(135deg);
+	    /*float: left;*/
+	    /*margin-top: 200px;*/
+	}
+	/* just for home page: circle contains arrow */
+	.circle{
+		border-radius: 50%;
+	    background-color: white;
+		top: 125px;
+		z-index: 1000000;
+		cursor: pointer;
+	}
+	.projectArrows{
+		top: 135px;
+	}
+	.circleRight{
+		right: 100px;
+	}
+	.circleLeft{
+		left: 40px;
+	}
+	.arrowsHome{
+		margin-top: 18px;
+	}
+	#arrowNext{
+		margin-left: 12px;
+	}
+	#arrowPrev{
+		margin-left: 20px;
+	}
+
+
+
+
+	/* HEADER */
+
+	.headerContainer{
+		width: 100%;
+		height: 180px; /* update HEADER_HEIGHT in script.js if altered */ 
+	}
+	.headerTitleText{
+		margin-left: 50px;
+		margin-top: 15px;
+	}
+	#nameContainer{
+		float: left;
+		z-index: 100;
+		top: 0px;
+		left: 0px;
+	}
+	.navigationContainer{
+		margin-top: 45px;
+		width: 240px;
+		float: left;
+		z-index: 100;
+		top: 0px;
+		right: 50px;
+	}
+	.homeFixed{
+		position: fixed;
+	}
+	.projPageAbsolute{
+		position: absolute;
+	}
+	.navigationTextContainer{
+		width: 110px;
+		float: right;
+		text-align: right;
+	}
+
+
+
+
+	/* HEADERS FOR PROJECT PAGES */
+
+	.projectTitleContainer{
+		width: 100%;
+		text-align: center;
+		/*margin-left: 200px;*/
+		margin-top: 120px;
+		/*background-color: #f9f9f9;*/
+		height: 100px;
+	}
+	.currentContentText{
+		font-weight: 600;
+		/*border-bottom: 2px solid #000;*/
+		padding-bottom: 3px;
+	}
+
+
+
+
+	/* FOOTER */
+
+	.contactInfo{
+		display: inline-block;
+		clear: both;
+	}
+	.footerContainer{
+		background-color: white;
+		z-index: 100000000;
+		bottom: 0px;
+		left: 50px;
+		height: 50px; /* update FOOTER_HEIGHT in script.js if altered */
+	}
+	.projPageFooter{
+		margin-left: 50px;
+		margin-bottom: 10px;
+		clear: both;
+		margin-top: 40px;
+		margin-right: 50px;
+	}
+	.projPageNoScroll{
+		margin-bottom: 10px;
+		position: absolute;
+		right: 50px;
+	}
+	.socialMediaImgsHome{
+		margin-top: 4px;
+		max-height: 24px;
+		display:inline-block;
+		margin-left: 1px;
+		margin-right: 9px;
+		vertical-align: top;
+	}
+	.nextProjContainer{
+		width: 200px;
+		float: right;
+		text-align: right;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+
+
+
+	/* FOOTER FOR PROJECT PAGES */
+
+	.footerContainerProj{
+		top: 35%;
+		left: 20px;
+		padding-left: 10px;
+		width: 30px;
+		height: 200px;
+	}
+	.socialMediaImgsProj{
+		margin-top: 20px;
+		max-height: 25px;
+		display:inline-block;
+		margin-left: 1px;
+		margin-right: 9px;
+		vertical-align: top;
+	}
+	.backToTopContainer{
+		text-align: center;
+	}
+	.backToTopText:hover{
+		font-weight: 600;
+	}
+
+
+
+
+	/* PROJECT SUMMARIES (IMAGES + DESCRIPTIONS) */
+
+	.projects{
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 50px; /* update PROJECT_PADDING in script.js if altered */  
+	}
+	.lastProjectImg{
+		margin-right: 80px;
+	}
+	.projectDescriptions{
+		white-space: normal;
+		word-wrap: break-word;
+		width: 260px;
+		text-align: left;
+		height: 210px; /* update DESCRIPTIONS_HEIGHT in script.js if altered */  
+		padding-top: 15px;
+	}
+	.projectImgContainers{
+		width: 10px;
+	}
+	.projectImgs{ 
+		height: 300px;
+		text-align: left;
+		cursor: pointer;
+		margin-left: 0px;
+	}
+
+
+
+
+	/* PROJECT SUMMARIES (IMAGES + DESCRIPTIONS) */
+
+	#rijks{
+	/*    border: 3px solid red;
+	    border-radius: 5px;*/
+	}
+
+	#rijksImg{
+		/*background-color: #eafefd;*/
+	/*    border: 5px solid #319343;
+	    border-radius: 5px;*/
+	}
+
+
+
+
+	/* ABOUT PAGE */
+
+	.aboutLeftLargeCol{
+		display: inline-block;
+		width: 25%;
+		float: left;
+	}
+	.aboutRightSmallCol{
+		margin-left: 50px;
+		display: inline-block;
+		width: 25%;
+		float: left;
+	}
+
+
+
+
+	/* PROJECT PAGES */
+
+	.content {
+		margin-top: 10px;
+		z-index: 100000;
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+	.contentEntry{
+		margin-top: 50px;
+		clear: both;
+	}
+	.contentLeftLargeCol{
+		display: inline-block;
+		width: 70%;
+	}
+	.contentRightSmallCol{
+		display: inline-block;
+		width: 25%;
+		float: right;
+	}
+	.challengeSummary{
+		background-color: #f2f2f2;
+	}
+	.challengeSummary p{
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+	.challengeSummary p:first-of-type{
+		margin-top: 50px;
+	}
+	.challengeSummary p:last-of-type{
+		margin-bottom: 50px;
+	}
+	.visitLink{
+		color: #c90057;
+		font-weight: bold;
+	}
+	.projPageImages{
+		max-width: 100%;
+	}
+	.projPageImagesSmaller{
+		max-width: 85%;
+		margin-left: 6%;
+		margin-right: 6%;
+	}
+	.projPageImagesDouble{
+		max-width: 47%;
+		margin-right: 1%;
+		margin-left: 1%;
+	}
+	.projPageImagesTriple{
+		max-width: 30%;
+		margin-left: 1%;
+		margin-right: 1%;
+	}
+	.projPageImagesQuad{
+		max-width: 21%;
+		margin-left: 2%;
+		/*margin-right: %;*/
+	}
+	.projPageImagesLargeShared{
+		max-width: 70%;
+	}
+	.projPageImagesSmallShared{
+		max-width: 25%;
+		margin-left: 3%;
+	}
+	.addSpace{
+		margin-top: 15px;
+	}
+	.skinnyImage{
+		width: 100px;
+	}
+	.smallGifs{
+		width: 300px;
+	}
+	.bigGifs{
+		width: 800px;
+	}
+
+}
+
+
+
+
+
+
+
+
+/* IPAD & MOBILE */
+
+@media only screen and (max-width: 768px) {
+
+	/* PROJECT SUMMARIES (IMAGES + DESCRIPTIONS) */
+
+	#projectsContainer{
+		/*margin-left: 50px;
+		margin-right: 50px;*/
+		text-align: center; 
+		width: 100%;
+		padding-bottom: 0px;
+	}
+	.scrolls{ 
+	}
+	.projects{
+		width: 100%;
+		clear: both;
+	}
+	.lastProjectImg{
+		margin-right: 80px;
+	}
+	.projectDescriptions{
+		white-space: normal;
+		word-wrap: break-word;
+		text-align: left;
+		padding-top: 15px;
+		padding-left: 50px;
+		padding-right: 50px;
+		padding-bottom: 65px;
+	}
+	.projectImgContainers{
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	.projectImgs{ 
+		width: 100%;
+		text-align: left;
+		cursor: pointer;
+		margin-left: 0px;
+	}
+
+
+
+
+	/* HEADER */
+
+	.headerContainer{
+		width: 100%;
+		height: 180px; /* update HEADER_HEIGHT in script.js if altered */ 
+	}
+	.headerTitleText{
+		margin-left: 50px;
+		margin-top: 15px;
+	}
+	#nameContainer{
+		float: left;
+		z-index: 100;
+		top: 0px;
+		left: 0px;
+	}
+	.navigationContainer{
+		margin-top: 45px;
+		width: 240px;
+		float: left;
+		z-index: 100;
+		top: 0px;
+		right: 50px;
+	}
+	.projPageAbsolute{
+		position: absolute;
+	}
+	.navigationTextContainer{
+		width: 110px;
+		float: right;
+		text-align: right;
+	}
+
+
+
+
+	/* FOOTER */
+
+	.contactInfo{
+		clear: both;
+		margin: auto;
+		width: 240px;
+		margin-bottom:50px;
+	}
+	.footerContainer{
+		clear: both;
+		background-color: white;
+		z-index: 100000000;
+		width: 100%;
+		height: 50px; /* update FOOTER_HEIGHT in script.js if altered */
+	}
+	.socialMediaImgsHome{
+		margin-top: 4px;
+		max-height: 24px;
+		display:inline-block;
+		margin-left: 1px;
+		margin-right: 9px;
+		vertical-align: top;
+	}
+	.nextProjContainer{
+		width: 200px;
+		float: right;
+		text-align: right;
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+
+
+
+
+
+
+
+
 
 
